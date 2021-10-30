@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>Baldur's Gate Enhanced Edition Cheat Sheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cheat sheet for Baldur's Gate Enhanced Edition. Checklist of things to do, items to get etc.">
+    <meta name="author" content="Luigi Peduto">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/jstorage.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var profilesKey = 'bgee_profiles';
+    </script>
+    <script src="js/main.js"></script>    
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="navbar">
+            <div class="navbar-inner">
+                <h1>Baldur's Gate Enhanced Edition Cheat Sheet</h1>
+                <h1 style="font-size: medium;">Contribute to the guide at the <a href="">GitHub Page</a></h1>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tabPlaythrough" data-toggle="tab">Playthrough</a></li>
+                    <li><a href="#tabHelp" data-toggle="tab">Help</a></li>
+                </ul>
+                <div class="profile" style="float: right;">
+                    <div class="input-append">
+                        <select id="profiles">
+                        </select>
+                        <button class="btn" type="button" id="profileAdd">Add</button>
+                        <button class="btn" type="button" id="profileEdit">Edit</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="intro">
+
+            <p>
+                The following is a checklist and set of information I use when playing Baldur's Gate Enhanced Edition. 
+                The checklist is completely imported from the most suitable guide I found on the net, created in 1999 
+                from <a href="mailto:wizards@charm.net">Al Giovetti</a>. This checklist was created by adopting the source 
+                code from the <a href="https://github.com/smcnabb/dark-souls-2-cheat-sheet/tree/gh-pages">Dark Souls 2 Cheat Sheet</a> created by <a href="https://github.com/smcnabb">Stephen McNabb</a>.  
+                If this is your first time visiting this page please check
+                out the Help section.
+            </p>
+            <p>
+                <em>Warning: Contains Spoilers!</em>
+            </p>
+
+        </div>
+
+        <div class="tab-content">
+
+            <div class="tab-pane active" id="tabPlaythrough">
+
+                <h2>Playthrough Checklist <span id="playthrough_overall_total"></span></h2>
+                <ul>
+                    <li><a href="#Prologue in Candle Keep">Prologue in Candle Keep</a>  (map 2600) <span id="playthrough_nav_totals_1"></span></li>
+                    <li><a href="#Chapter One: Journey to the Friendly Arm Inn">Chapter One: Journey to the Friendly Arm Inn</a>  (map 2300) <span id="playthrough_nav_totals_2"></span></li>
+                    <li><a href="#Beregost">Beregost</a>  (map 3300) <span id="playthrough_nav_totals_3"></span></li>
+                    <li><a href="#Chapter 2: Naskell">Chapter 2: Naskell</a>  (map 4800) <span id="playthrough_nav_totals_4"></span></li>
+                    <li><a href="#Naskell Fair">Naskell Fair</a>  (map 4900) <span id="playthrough_nav_totals_5"></span></li>
+                    <li><a href="#Naskell Iron Mines and end of chapter 2">Naskell Iron Mines and end of chapter 2</a>  (map 5400) <span id="playthrough_nav_totals_6"></span></li>
+                    <li><a href="#Farms and Fishermen north of Friendly Arm Inn">Farms and Fishermen north of Friendly Arm Inn</a>  (map 1400) <span id="playthrough_nav_totals_7"></span></li>
+                    <li><a href="#Chapter 3: Larswood">Chapter 3: Larswood</a>  (map 2900) <span id="playthrough_nav_totals_8"></span></li>
+                    <li><a href="#Peldvale North of Larswood">Peldvale North of Larswood</a>  (map 2400) <span id="playthrough_nav_totals_9"></span></li>
+                    <li><a href="#Wood of Sharp Teeth">Wood of Sharp Teeth</a><span id="playthrough_nav_totals_10"></span></li>
+                    <li><a href="#Bandit Camp and end of Chapter 3">Bandit Camp and end of Chapter 3</a>  (map 1900) <span id="playthrough_nav_totals_11"></span></li>
+                    <li><a href="#Chapter 4: Cloakwood Forest">Chapter 4: Cloakwood Forest</a>  (maps 2200, 2100, 1600, 1700 and 1800) <span id="playthrough_nav_totals_12"></span></li>
+                    <li><a href="#Cloakwood One,  west of Friendly Arm Inn">Cloakwood One,  west of Friendly Arm Inn</a>  (map 2200) <span id="playthrough_nav_totals_13"></span></li>
+                    <li><a href="#Cloakwood Two,  west of Cloakwood One">Cloakwood Two,  west of Cloakwood One</a>  (map 2100) <span id="playthrough_nav_totals_14"></span></li>
+                    <li><a href="#Cloakwood Three,  west of Cloakwood Two">Cloakwood Three,  west of Cloakwood Two</a>  (map 1600) <span id="playthrough_nav_totals_15"></span></li>
+                    <li><a href="#Cloakwood Four,  east of Cloakwood Three">Cloakwood Four,  east of Cloakwood Three</a>  (map 1700) <span id="playthrough_nav_totals_16"></span></li>
+                    <li><a href="#Cloakwood Mines,  east of Cloakwood Four">Cloakwood Mines,  east of Cloakwood Four</a>  (map 1800) <span id="playthrough_nav_totals_17"></span></li>
+                    <li><a href="#Chapter 5: Baldur's Gate">Chapter 5: Baldur's Gate</a><span id="playthrough_nav_totals_18"></span></li>
+                    <li><a href="#Chapter 6: Return to Candlekeep">Chapter 6: Return to Candlekeep</a>  (map 2600) <span id="playthrough_nav_totals_19"></span></li>
+                    <li><a href="#Chapter 7: Baldurs Gate after Candlekeep">Chapter 7: Baldurs Gate after Candlekeep</a><span id="playthrough_nav_totals_20"></span></li>
+                    <li><a href="#End Game: Baldur's Gate Undercity and Temple of Bhaal">End Game: Baldur's Gate Undercity and Temple of Bhaal</a><span id="playthrough_nav_totals_21"></span></li>
+
+                </ul>
+
+                <h2>The side quest areas of the game: </h2>
+
+                <ul>
+                    <li><a href="#Crossroads of the Coastway and the Way of the Lion">Crossroads of the Coastway and the Way of the Lion</a>  (map 2800) <span id="playthrough_nav_totals_22"></span></li>
+                    <li><a href="#Shipwreck north of lighthouse south of Candlekeep">Shipwreck north of lighthouse south of Candlekeep</a>  (map 3100) <span id="playthrough_nav_totals_23"></span></li>
+                    <li><a href="#Beregost Temple District just east of Beregost">Beregost Temple District just east of Beregost</a>  (map 3400) <span id="playthrough_nav_totals_24"></span></li>
+                    <li><a href="#High Hedge just west of Beregost">High Hedge just west of Beregost</a>  (map 3200) <span id="playthrough_nav_totals_25"></span></li>
+                    <li><a href="#Basilisk Area east of Beregost Temple District">Basilisk Area east of Beregost Temple District</a>  (map 3500) <span id="playthrough_nav_totals_26"></span></li>
+                    <li><a href="#Sea Watcher Ruins">Sea Watcher Ruins</a>  (map 3600) <span id="playthrough_nav_totals_27"></span></li>
+                    <li><a href="#Stonehenge NW of Lake House">Stonehenge NW of Lake House</a>  (map 3700) <span id="playthrough_nav_totals_28"></span></li>
+                    <li><a href="#Lil Caster School">Lil Caster School</a>  (map 3900) <span id="playthrough_nav_totals_29"></span></li>                    
+                    <li><a href="#Minesite 2">Minesite 2</a>  (map 4100) <span id="playthrough_nav_totals_30"></span></li>
+                    <li><a href="#Lake House NW of Naskell">Lake House NW of Naskell</a>  (map 4200) <span id="playthrough_nav_totals_31"></span></li>
+                    <li><a href="#Farm NE of Naskell">Farm NE of Naskell</a>  (map 4400) <span id="playthrough_nav_totals_32"></span></li>
+                    <li><a href="#Fire Wine Bridge Ruins">Fire Wine Bridge Ruins</a>  (map 4500) <span id="playthrough_nav_totals_33"></span></li>
+                    <li><a href="#North of the Gnoll Fortress">North of the Gnoll Fortress</a>  (map 4600) <span id="playthrough_nav_totals_34"></span></li>
+                    <li><a href="#Xvart Village">Xvart Village</a>  (map 4700) <span id="playthrough_nav_totals_35"></span></li>
+                    <li><a href="#The Tombs">The Tombs</a>  (map 5000) <span id="playthrough_nav_totals_36"></span></li>
+                    <li><a href="#Gnoll Fortress">Gnoll Fortress</a>  (map 5100) <span id="playthrough_nav_totals_37"></span></li>
+                    <li><a href="#Pine Forest East of Gnoll Fortress, 1 day south of the Xvart Villiage">Pine Forest East of Gnoll Fortress, 1 day south of the Xvart Villiage</a><span id="playthrough_nav_totals_38"></span></li>
+                    <li><a href="#Darryl, Darryl and Larry area, 12 hours South of Nashkell">Darryl, Darryl and Larry area, 12 hours South of Nashkell</a>  (map 5300) <span id="playthrough_nav_totals_39"></span></li>
+                    <li><a href="#East Giberling Camp">East Giberling Camp</a>  (map 5500) <span id="playthrough_nav_totals_40"></span></li>
+                    <li><a href="#Tenya's House">Tenya's House</a>  (map 0400) <span id="playthrough_nav_totals_41"></span></li>
+                    <li><a href="#Baldur's Gate Bridge">Baldur's Gate Bridge</a>  (map 0900) <span id="playthrough_nav_totals_42"></span></li>
+                    <li><a href="#Baldur's Gate Side Quests">Baldur's Gate Side Quests</a><span id="playthrough_nav_totals_43"></span></li>
+                    <li><a href="#Baldur's Gate Northwest">Baldur's Gate Northwest</a>  (map 0100) <span id="playthrough_nav_totals_44"></span></li>
+                    <li><a href="#Baldur's Gate North-central">Baldur's Gate North-central</a>  (map 0200) <span id="playthrough_nav_totals_45"></span></li>
+                    <li><a href="#Baldur's Gate Northeast">Baldur's Gate Northeast</a>  (map 0300) <span id="playthrough_nav_totals_46"></span></li>
+                    <li><a href="#Baldur's Gate West-central">Baldur's Gate West-central</a>  (map 0600) <span id="playthrough_nav_totals_47"></span></li>
+                    <li><a href="#Baldur's Gate Central-central">Baldur's Gate Central-central</a>  (map 0700) <span id="playthrough_nav_totals_48"></span></li>
+                    <li><a href="#Baldur's Gate East-central">Baldur's Gate East-central</a>  (map 0800) <span id="playthrough_nav_totals_49"></span></li>
+                    <li><a href="#Baldur's Gate South-west">Baldur's Gate South-west</a>  (map 1100) <span id="playthrough_nav_totals_50"></span></li>
+                    <li><a href="#Baldur's Gate South-central">Baldur's Gate South-central</a>  (map 1200) <span id="playthrough_nav_totals_51"></span></li>
+                    <li><a href="#Baldur's Gate South-east">Baldur's Gate South-east</a>  (map 1300) <span id="playthrough_nav_totals_52"></span></li>
+                    <li><a href="#Baldur's Gate Sewers and Undercellars">Baldur's Gate Sewers and Undercellars</a><span id="playthrough_nav_totals_53"></span></li>
+                    <li><a href="#Gullykin">Gullykin</a>  (map 4000) <span id="playthrough_nav_totals_54"></span></li>
+                   
+
+                </ul>
+                
+                <hr />
+
+                <a name="Prologue in Candle Keep"></a>
+                <h3><a href="#Prologue in Candle Keep">Prologue in Candle Keep</a>  (map 2600) <span id="playthrough_totals_1"></span></h3>
+                <ul>
+                    <li data-id="playthrough_1_1">Save your game.</li>
+                    <li data-id="playthrough_1_2">Do NOT speak to Gorion, who is on the steps in the center of Candlekeep, yet.</li>
+                    <li data-id="playthrough_1_3">Explore all of Candle Keep.</li>
+                    <li data-id="playthrough_1_4">Get scroll from Tethoril found in the inner courtyard. Enter the inner courtyard at the southeast portion of the map near the gate. Give scroll to Firebeard.</li>
+                    <li data-id="playthrough_1_5">Speak to Reevor the dwarf who is standing just outside the warehouse in the east side of Candlekeep. Kill the rats for Reevor. Return to Revor to report your success.</li>
+                    <li data-id="playthrough_1_6">Speak to Hull found near the front gate on lower right. Get Hull's sword from his chest in the guard house in the lower portion (south) of candlekeep. Get Hull's sword and the healing potion from Hull's chest in the northeast (upper right) corner of the guardhouse.</li>
+                    <li data-id="playthrough_1_7">Get book in the hay next to Dreppin. Dreppin is in the upper right (north-east) portion near the cow. Give the book to Phlydia who is in the upper left portion (north-west).</li>
+                    <li data-id="playthrough_1_8">Kill assassin in the bunkhouse near the guard house in south center (lower center).</li>
+                    <li data-id="playthrough_1_9">Kill assassin in the priest quarters near the Inn.</li>
+                    <li data-id="playthrough_1_10">Get potion from priest in priest bunks in the south (lower) part of Candlekeep.</li>
+                    <li data-id="playthrough_1_11">The Gatewarden in the south (lower center) can provide experience by fighting battles of illusion.</li>
+                    <li data-id="playthrough_1_12">Buy a bow, a short sword, arrows, and one leather armor from Winthrop the innkeeper inside the inn at the northwest of the map (where you came into the game).</li>
+                    <li data-id="playthrough_1_13">Get bolts from Winthrop at the inn and give them to Fuller, who is in the Guard House in the south west to center of the map.</li>
+                    <li data-id="playthrough_1_14">Get everything that is not nailed down.</li>
+                    <li data-id="playthrough_1_15">Speaking to Gorion starts the cut scene that takes you out of Candlekeep never to return.</li>
+                </ul>
+
+                <a name="Chapter One: Journey to the Friendly Arm Inn"></a>
+                <h3><a href="#Chapter One: Journey to the Friendly Arm Inn">Chapter One: Journey to the Friendly Arm Inn</a> (map 2300)  <span id="playthrough_totals_2"></span></h3>
+                <ul>
+                    <li data-id="playthrough_2_1">After the cut scene animation, You will appear one map area to the east (right) of candlekeep, map 2700. This map appears as a circle of stones on the large automap view within the game.</li>
+                    <li data-id="playthrough_2_2">Imoen will approach you if you did not rebuff her in candlekeep. Imoen will join your party.</li>
+                    <li data-id="playthrough_2_3">Give Imoen your extra equipment.</li>
+                    <li data-id="playthrough_2_4">Go back to where you and Gorion were attacked and pick up the gold, items and the letter.</li>
+                    <li data-id="playthrough_2_5">In the east (right side) of the map near the road are two evil characters who can join your party with some negative consequences. Take Montaron and Xzar along, if you need more firepower.</li>
+                    <li data-id="playthrough_2_6">Explore the entire map, 2700.</li>
+                    <li data-id="playthrough_2_7">You will have some random encounters with giberlings and wolves. Kill them.</li>
+                    <li data-id="playthrough_2_8">After exploring the entire map section head east (to the right) and exit this map section. You are now on the crossroads map, map 2800. You will meet Elminster, the famous Shadowdale wizard, immediately upon entering this page. He is the guy in the blue dunce cap and red robes that says "Ho, Wanderer".</li>
+                    <li data-id="playthrough_2_9">Explore the map section, map 2800.</li>
+                    <li data-id="playthrough_2_10">There is a ring of protection hidden in a small hole in a round rock to the northeast of where you enter this area.</li>
+                    <li data-id="playthrough_2_11">Be sure to save before fighting the Ogre in the southeast (lower right) part of the map grid.</li>
+                    <li data-id="playthrough_2_12">Take and identify the Ogre treasure. One of the belts is cursed so be careful.</li>
+                    <li data-id="playthrough_2_13">Once you have explored this entire map area, leave the map area to the north (go up).</li>
+                    <li data-id="playthrough_2_14">You should now be at the Friendly Arm Inn, map 2300.</li>
+                    <li data-id="playthrough_2_15">Save your game.</li>
+                    <li data-id="playthrough_2_16">Go up the stairs to the main keep and a more skilled assassin named Tarnesh will attack the group. Kill him.</li>
+                    <li data-id="playthrough_2_17">The temple just past the stairs to the right (east) will give you healing should you need it before or after killing the assassin.</li>
+                    <li data-id="playthrough_2_18">The temple sells potions, identifies items, takes donations, and heals. Buy a stone to flesh scroll now if you can afford it, you will need it later at the Nashkell fair.</li>
+                    <li data-id="playthrough_2_19">Once inside the Inn talk to everyone until they start repeating themselves.</li>
+                    <li data-id="playthrough_2_20">Let Khalid and Jaheira in the northwest (upper left) corner of the inn join your party.</li>
+                    <li data-id="playthrough_2_21">Just north west of the gate to the Friendly Arm Inn is a door. Within that room a woman has lost her flamedance ring. The hobgoblins north of the Inn have the ring. Return the ring to the woman.</li>
+                    <li data-id="playthrough_2_22">Collect the reward for one the belts that you got from the Ogre on map 2800, girdle of piercing, from Unshey upstairs on the second level in the Inn, map 2302.</li>
+                    <li data-id="playthrough_2_23">Landrin, third level of the inn, map 2303, will offer you a job in Beregost which is south of the Inn, check your main map. Landrin wants you to go to Beregost and clean out the giant spider infestation in his house. Landrin also would like you to retrieve his wine bottle, old boots, spider body, and other items from his house. Take them all back to him for a reward for each.</li>
+                    <li data-id="playthrough_2_24">The ring of wizardy is at Friendly Arm inn. Look for a pine tree with a few rocks at its base along the the southern border of the map (lower right edge of map). Look carefully around the tree's base. The ring is quite small. Coordinates of ring location are x=2554 y=3758. Pressing the L key will give you the coordinates and the map area number to where your mouse is pointing.</li>
+                    <li data-id="playthrough_2_25">Buy a book, "The History of the Fateful Coin" from the bartender of the Inn. You will need the book in Beregost.</li>
+                    <li data-id="playthrough_2_26">Going south toward Nashkel to check on the Iron shortage starts the journey toward Baldur's Gate.</li>
+
+                </ul>
+
+                <a name="Beregost"></a>
+                <h3><a href="#Beregost">Beregost</a>  (map 3300) <span id="playthrough_totals_3"></span></h3>
+                <ul>
+                    <li data-id="playthrough_3_1">Hunt down the cleric Bassilus and return with the holy sign of Cyric to Song of the Morning Temple for a 5000 gold reward.</li>
+                    <li data-id="playthrough_3_2">Old Gurk in the Beregost's Jovial Juggler Inn has lost his famous coat in Cloakwood. When you find the cloak return it to Gurk here and he will tell you to keep it. He is making more money as a tourist attraction to let you louse it up. If your charisma is really high, not over 18, he may pay you for it. Gurk's cloak is a cloak of non-detection and is found in Cloakwood #1, map area 2200, on a group of taslois.</li>
+                    <li data-id="playthrough_3_3">Firebead Elvenhair wants the book: "The History of the Fateful Coin." He is willing to pay 300 experience, +1 reputation, and the book, "The History of the Dead Three." Firebead Elvenhair is on the second floor of the southernmost house on the opposite side of the street from the Feldpost Inn.</li>
+                    <li data-id="playthrough_3_4">Zhurlong, a thief, is found on the first floor of the Burning Wizard Tavern. Hobgoblins on the map area, map area 3800, to the south of Beregost have Zhurlong's Boots of Stealth. The hobgoblins are to the southeast of the center of the map, just south of the cave to the west of center, have. The sunken house is almost in the direct center of the level. Zhurlong will pay you 100gold, 300 experience, and will return the 15 gold that he picks from your pocket when you meet.</li>
+                    <li data-id="playthrough_3_5">Bjornin, a Paladin, in the Beregost's Jovial Juggler Inn wants you to go south-south-west of town and rid the area of the half-ogres there. Return to him for a 400 experience points and a medium shield +1 when done. South shouth west takes you two map area south and one map area west. This is the Lake House area or map 4200.</li>
+                    <li data-id="playthrough_3_6">Peruse the very expensive magic armor and weapons at Thunderhammer's Smithy in the central east area of the map. Thunderhammer has Leather of Ahm +3, Full Plate, Plate breast, long sword +1, short sword +1, long composite bow +1, crossbow of speed, chain +1, bolts +1, stones +1, short bow +1, long composite bow +1, sling +1, and arrows +2. This is where you can take Ankheg carapaces and have them made into armor for 4000 gold. Taerom Fuiruim is the smith for this smithy. The interior of the Smithy is map 3101.</li>
+                    <li data-id="playthrough_3_7">Also go to the Fieldpost Inn in the center south of the map to find more expensive magic items. Fieldpost has biting arrows, frost arrows, arrows +2, Long sword +1, amulet of defense +1.</li>
+                    <li data-id="playthrough_3_8">Marl at the Feldpost Inn is upset because his son turned adventurer and was killed. If you answer his queries with responses 1, 1, 3 and 3 you will passify Marl and win experience of 900 points. You basically say his son was a fine person, it was not your fault he died, and that you want to have a drink with Marl to salute his dead son. Dunkin is Marl's friend who will egg on Marl but will not fight you. (After you do that if you have a mage you can charm him, when the spell wears off he will attack you and you can gain like another 900 exp. From: John Okert</li>
+                    <li data-id="playthrough_3_9">A bard named Garrick, found south of the Red Sheaf Inn, wants you to help kill some evil brutes who want to beat up Silke, the female bard, for not playing at Fieldpost Inn. Silke, "the bard" outside the Red Sheaf Inn in the center of town, is really an evil mage who intends to kill the messenger for his wares. Fight her and get her stuff.</li>
+                    <li data-id="playthrough_3_10">Karlat at the Red Sheaf Inn is another assassin to kill and loot.</li>
+                    <li data-id="playthrough_3_11">There is another assassin at the Jovial Juggler Inn to kill and loot.</li>
+                    <li data-id="playthrough_3_12">Lady Muriane in her house, map 3313, in the northwest wants news of her husband who is overdue from Ahm. The house is the one with the blue roof and off white stucco and two windows that face south. You can enter the house from the east down the little stone path. If you go south to the next map area and follow the road due south until you come upon two Ogarillions with a dead halfling body, right on the road. Search the halfling to find a letter from Muriane's husband. Return the letter to Muraine for 300 experience points and a ring of protection +1. Muriane's husband is returning by sea, since the roads are unsafe and has sent this note north with a halfling (the one who is dead on the road) so she would not worry.</li>
+                    <li data-id="playthrough_3_13">Thalantyr Keep at High Hedge keep on the next map, map 3200, to the east of town has a shop with magical weapons.</li>
+                    <li data-id="playthrough_3_14">Rules Windspear wants you to go to the Lil Caster School Ruins SE of town and retrieve an item for him.</li>
+                    <li data-id="playthrough_3_15">Perdue is in Beregost, in the Red Sheaf Inn, map 3357, where Silke standing outside. Give him his sword, and you get 250 experience points and 50 gold. The Gnolls around High Hold have Perdue's short sword, 1 area west of Beregost.</li>
+                    <li data-id="playthrough_3_16">In the Northeast area of the map is a mansion type house with 2 guards standing just inside the door. Upstairs in the bedroom inside one of the desks or chests. it might be locked. The item is a wand of monster summoning.</li>
+                    <li data-id="playthrough_3_17">Kaigan, lawful-evil, dwarf, male, fighter, found at the shop north of the Fieldpost Inn. The shop has a brown roof with a wagon out back and it is just to the west (left) of the large Beregost sign. Kaigan is looking for a lost noble's son, who was a passenger on his caravan line to Baldur's Gate. Kaigan will join your group to pursue the lost son of the noble. The son's caravan is at the crossroads, map 2800. If you do not go to the caravan site at the crossroads within 14 days, Kaigan will leave the group.</li>
+                    <li data-id="playthrough_3_18">Chapter 3, Chloe, a child, will approach the party telling them that Officer Jessa Vai is looking for them and can be found in the Jolly Jester Inn.</li>
+                    <li data-id="playthrough_3_19">In Chapter 3, Officer Vain of the Flaming Fist in the Jolly Jester will pay 50 gold for each bandit scalp you bring in. Bandits are a good source of experience and gold. You can stack 10 scalps in one inventory slot. Bandits are found in the many areas including Larswood and Peldvale areas.</li>
+                    <li data-id="playthrough_3_20">Also in Chapter 3, Tranzig in the Feldpost Inn on the second floor, map 3101, in the southwest (lower left) will tell you where the bandit camp is when you question him. If he does not tell him, just kill him when he turns red and read the letter he has on him. Kill him so he will not notify the camp that you are coming.</li>
+                    <li data-id="playthrough_3_21">In chapter 3 after reading Tranzig's letter, Elminster will appear in front of the blacksmith shop to tell you the bandit camp is northeast of the Friendly Arm Inn.</li>
+                    <li data-id="playthrough_3_22">Chapter 3: Zurlong in the Burning Wizard Inn in Bereghost wants you to find his boots stolen by hobgoblins. If you return his boots of stealth to him, he will give you 150 gold. The boots of Stealth are found in the area just south of Beregost, map area 3800. Around the middle of the map, west of the road, are a group of Hobgoblins near a cave. One of the hobgoblins is wearing the Boots of Stealth.</li>
+                </ul>
+
+                <a name="Chapter 2: Naskell"></a>
+                <h3><a href="#Chapter 2: Naskell">Chapter 2: Naskell</a>  (map 4800) <span id="playthrough_totals_4"></span></h3>
+                <ul>
+                    <li data-id="playthrough_4_1">Chapter 2 starts when you enter Nashkell for the first time.</li>
+                    <li data-id="playthrough_4_2">Neira another bounty hunter is awaiting you inside the Nashell Inn just to the south and east of the bridge into town from the north. This is a tough fight as she can cast hold on your group. Neira has some nice stuff including a fancy helmet. The Innkeeper offers rooms but no items to buy or sell.</li>
+                    <li data-id="playthrough_4_3">A plain store south and east of the Inn has items for sale and to buy. Odly this shopkeeper will not buy shields or potions.</li>
+                    <li data-id="playthrough_4_4">The temple of Torm is found south-east of the store. This is where you can get items identified and party members healed. The temple friars also sell potions. Nalin, the priest of the temple, asks you to return Brage to the temple - reward 1000 gold.</li>
+                    <li data-id="playthrough_4_5">Just southwest of the temple of Torm you will find a fat man named Oublek. Oublek mistakes you for Greywolf, a bounty hunter, and wants to give you Greywolf's reward money. Admit that you are not Greywolf and Oublek will be impressed with your honesty. You will be rewarded with experience and your reputation will go up by a point.</li>
+                    <li data-id="playthrough_4_6">Noobler, found on the farm in the southwest part of town across the second bridge, will pester you forever. If you let him be and just put up with it, the group gets 400 experience points when he "runs out of things to say."</li>
+                    <li data-id="playthrough_4_7">On the bridge to where you find Noobler, you will find Edwin, an evil mage, who wants you to help him kill Dynaheir who he claims is an evil witch. If you go to the Naskell Fair you will find them arguing over something. Help the witch. I could not keep the witch from getting killed by him.</li>
+                    <li data-id="playthrough_4_8">In the south-east portion of town is a "deranged" ranger named Minsc with a pet hamster named Boo. If you offer to help him, he will join your group. This guy is crazy and not reliable and will eventually turn on the group if you do not go to the Gnoll Fortress and help him save a friend. The gnoll fortress is very dangerous and you may not want to go here. If you do not agree to help Minsc rescue Dynaheir from the Gnoll fortress, he will attack you.</li>
+                    <li data-id="playthrough_4_9">The mayor, Berrun Ghastkill, will stake himself out at the entrance to the Temple of Torm and remind you to clean out the mines until you kill Mulheyney in the lowest level of the Naskell mines to end chapter 3. Early in the level Berrun will give you the task of cleaning out the mines. He claims the mines are filled with demons. You will find out later that the demons are really kobalds.</li>
+                    <li data-id="playthrough_4_10">Edwin, an evil wizard from Thay standing on the southern bridge in Naskell just south of the Belching Dragon, will tell you about the witch Dynaheir who he asks your assistance in killing. Blow him off and return later with Dynaheir to kill him and get his stuff.</li>
+                    <li data-id="playthrough_4_11">A locked house in the south central part of the level has a woman in the house who is looking for her husband Joseph, who disappeared in the mines with his green stone ring. Return the ring to the woman for experience.</li>
+                    <li data-id="playthrough_4_12">Find a pearl and an Ankheg armor in the middle of the westernmost furrow of the west central farm area that is plowed from north to south. The item is in the center of the most western furrow near a small pine tree. This is the second set of Ankheg armor available in the game and is excellent armor for anyone who is weak, such as Branwein, a cleric who you will find at the Nashkell Fair.</li>
+                    <li data-id="playthrough_4_13">The locked old manor house in the west-central area holds lots of books and scrolls on the first floor. On the second floor, Samantha, the daughter of the nobles living here, is found. If you talk with Samantha, her boyfriend, Jamie, who is hiding in the closet, will emerge and pick a fight. You will loose 10 reputation and only gain 15 experience points for killing them. You are better off staying out of this house.</li>
+                    <li data-id="playthrough_4_14">If you click on a grave in the south-west portion of the graveyard, a red robed mage named "Daer'Ragh" will appear and warn you not to do that again. If you click on the grave repeatedly, he summons Phoenix warriors who blow up in a blaze of fire when you kill them. When they blow up, the warriors resurrect. The odds of these warriors killing your party are very high. The red robed mage is a has 147 hit points. You must do 147 points of damage to kill him. If your cleric manages to cast "Silence 15' " on Daer'Ragh after you repeatedly click on the grave, Daer does not manage to summon phoenix guards as well as dimension door away! He can be killed quite easily and after death turns into a phoenix guard which can be killed again (didn't ressurect itself after death for me). Phoenix guard gives your 100 exp and Daer himself only 10. On Daer's corpse there is around 50 gold. As a side note, if you stand close enough (fireball radius) from Oublek the Nashkel task master, when phoenix guard dies, he does not survive the fire. On Oublek's corpse I found around 2500 gold and the two emeralds I gave him previously (from Prizm quest). From: Gundif(gundif@usa.net)</li>
+                    <li data-id="playthrough_4_15">In Chapter 3, Nimbul, another assassin will attack you outside the Nashkell Inn. This one has nice stuff.</li>
+                    <li data-id="playthrough_4_16">In the south central portion of the Nashkell map, you will find the Belching Dragon Tavern. In the middle of the tavern you will find Volotham Geddarm standing on the table and telling stories. If you talk to Volo he will tell you several tales.</li>
+                </ul>
+
+                <a name="Naskell Fair"></a>
+                <h3><a href="#Naskell Fair">Naskell Fair</a>  (map 4900) <span id="playthrough_totals_5"></span></h3>
+                <ul>
+                    <li data-id="playthrough_5_1">There is a statue of a cleric in the middle of the map, just south of the large red striped rectangular tent, that will join your party should you use a stone to flesh spell on her. She is a loyal and good companion.</li>
+                    <li data-id="playthrough_5_2">The games of chance in the larger tents seem to be rigged. I could not win a thing.</li>
+                    <li data-id="playthrough_5_3">Save the game before entering the large round tents, have a hold person or entangle spell ready, and hit the spacebar when Vitiare, the pickpocket thief approaches you. After the thief steals, hit the space bar, use the scroll of hold person and then hit the spacebar to start the time. Once held the thief can be killed to retrieve the stolen items, gain experience, and his stuff.</li>
+                    <li data-id="playthrough_5_4">The large rectangular tent has armor items for sale and purchase.</li>
+                    <li data-id="playthrough_5_5">The easternmost round tent in the main fair is for sale and purchase of weapons.</li>
+                    <li data-id="playthrough_5_6">Gazib and Oopah are found at the fair. After you talk to gazib, he summons Oopah who explodes. After three times of repeating this Oopah gets angry.</li>
+                    <li data-id="playthrough_5_7">One of the round tents in this area is where a mage named Zorda is found arguing with Bentha, a female wizard, who is apparently falsely accused of something. Call the male mage a moron and he will attack you allowing you to save the female wizard. Talk to Bentha after killing him for your reward and experience.</li>
+                    <li data-id="playthrough_5_8">There are two groups of about ten kobalds in the north of the area and one ogre beserker. Kill and loot them. The ogre beserker is worth 650 experience points.</li>
+                </ul>
+
+                <a name="Naskell Iron Mines and end of chapter 2"></a>
+                <h3><a href="#Naskell Iron Mines and end of chapter 2">Naskell Iron Mines and end of chapter 2</a>  (map 5400) <span id="playthrough_totals_6"></span></h3>
+                <ul>
+
+                    <li data-id="playthrough_6_1">You need to talk to Emerson in the mine area in the northwest corner of the level to gain access to the mines. The iron mines are four levels deep. There is a passagway from the fourth level to an area of undead to the east of the mines. This area of undead is very dangerous so even if you go into the mines DO NOT exit the fourth level into this area. You will be immediately attacked by four high level spellcasters.</li>
+                    <li data-id="playthrough_6_2">The mines are infested with kobalds. Good experience and items to sell.</li>
+                    <li data-id="playthrough_6_3">Talk to everyone here, even though they do not seem friendly.</li>
+                    <li data-id="playthrough_6_4">A miner named Dink on the first level will give you Kylee's Dagger to give to him on level two. Kylee is in the large round area on the second level of the mines. Give Kylee his dagger for some experience points.</li>
+                    <li data-id="playthrough_6_5">Nashkell Mines Level Three: You will find the body of Joseph in front of your party as you enter the level. Look in front of Joseph's dead body to find his ring. Return the ring to his wife in Naskell.</li>
+                    <li data-id="playthrough_6_6">In the bottom level of the mine you will find a Mulahey, a priest of Cyric. When you are at the door leading to the map to the west which I call the Tombs, go back west then to the south. You should be back to where you came in. Literally straight east of you is a hole in the wall which you can enter. You will find him in a cool looking room with pillows, etc. strewn about. Do NOT exit where the travel icon shows up (that sends you out in to the wild far west of Nashkel) on the fourth level. If you now where that exit is, you need to go West. Its not very far. If i remember correctly there is a little crossing over the water(, and its just on the opposite side(the big rock is on the other side of the crossing(as in REALLY big rock)). If you go back to where you arrived on the level i believe there is a tunnel to the lake "room". Once there you can go left, up and around to where the travel icon shows up, or you can cross the water to the rock in the middle. There are three levels to the Mines, as I recall. The three exits to go down farther are in the SE corners of each level of the mines. The entrance to the last level, the third, is hard to find, but head South to where there is a ghoul and two spiders, kill those then head east. there are traps by the door above the lake, disarm them and enter the door (use thief skill after find traps skill) the bad man is in the ONLY entrance across the water, there are a couple of Kobold commandos near the entrance as a nice little marker with their pretty fire arrows. When you kill the Mulahey, get the vial of mysterious green liquid and the letter. Read the letter and return to the mayor of the town and confront him. Killing Mulahey gives the party a ring of holiness as treasure and 1200 experience points for finishing the chapter.</li>
+                    <li data-id="playthrough_6_7">Xan, a lawful-neutral, elf, male enchanter, is on the lowest level of the Naskell Iron Mines in the area just north of Mulahey. If you talk to Xan here with six members in your party, he will be lost forever. If you dismiss a party member here and take Xan, they also may be lost forever. Return to the Naskell Inn and dismiss someone there and return to pick up Xan. You can dismiss Xan in an Inn and he should stay put.</li>
+                    <li data-id="playthrough_6_8">You can leave the mines easily by walking out the exit to the Tombs area, map 5000. Be careful as this area is a tough one.</li>
+                    <li data-id="playthrough_6_9">Outside the mines in the SW you will find Prism the artist who stole the emeralds to make a sculpture. I talked with him and he gave me no choice but to kill him for the emeralds. On second conversation I talked with him about Greywolf, a mercinary, and then agreed to take all that was his to forget we saw him. Greywolf will then arrive. Ask Greywolf to wait for Prism to finish his masterpiece. You must protect Prism from Greywolf when he attacks. You get 1400 experience points and a long sword +2 for killing him. Talk to Prism, he will finish the sculpture and die at your feet. You get 1000 experience points and one point increase in reputation. You will now be able to see the face of Ellesime on the cliff. Search Prism's body for the two emeralds. Turn the emeralds in to the bounty redeamer south of the temple of Torm in Naskell for 900 gold. Major sub-quest.</li>
+                    <li data-id="playthrough_6_10">In the far northwest corner of the level is a rotten tree. On the tree is a rotten gnot-hole. Within the gnot-hole is a wand of lightning. Coordinates for the wand are c=168 y=179.</li>
+                    <li data-id="playthrough_6_11">White wolf pelts can be found in central to south-east of the mine area also for extra money (500 gold) selling to the Naskell store</li>
+                    <li data-id="playthrough_6_12">In the east central area a fighter, Danall, from the Ahm militia warns you of dangers and will accept your offer of help. he suggests you go clear out the mines. On further conversation, Danall will tell you where to find Prism in the southwest.</li>
+                    <li data-id="playthrough_6_13">In the store house near the entrance to the level are war dogs to kill.</li>
+                    <li data-id="playthrough_6_14">In the south-central area, Galtok, a gnome, is being chased by kobald archers. After you talk with him, a fight with five kobalds will start.</li>
+                    <li data-id="playthrough_6_15">There are three ghouls in the west-central area.</li>
+                </ul>
+
+                <a name="Farms and Fishermen north of Friendly Arm Inn"></a>
+                <h3><a href="#Farms and Fishermen north of Friendly Arm Inn">Farms and Fishermen north of Friendly Arm Inn</a>  (map 1400) <span id="playthrough_totals_7"></span></h3>
+                <ul>
+                    <li data-id="playthrough_7_1">Here the road winds east and then north around the farms and farmers. In the south central area just north of the east-west portion of the road, you will find Ajantis, the Paladin NPC, who is a good fighter with limited heal spells.</li>
+                    <li data-id="playthrough_7_2">Also in this area there are ankhegs. If you kill them, you can either sell their carapaces or you can leave them with the blacksmith in Bereghost to have them turned into ankheg armor for 4000 gold each. The ankheg armor is light and stronger than even magic plate. I found it the best armor in the game.</li>
+                    <li data-id="playthrough_7_3">Farmer Brun in the center of the map has lost his son Nathan. Find Nathan and return him to Farmer Brun. Go west of the farm and you will see a big hole in the ground. It's a big Ankheg lair. Go into it. This area is kinda hard, so if you have a theif in your party with good stealth just hide him/her and go into the hole. Leave the non-stealth party members outside. If you had little or no trouble killing the Ankheg in the Farmer's feild then you can just take your entire party. Anyway, the boy is in a treaser pile in the north northwest part of the cave, you can't miss it. There are also some nice goodies in the stash. Hope this helps. Return to Farmer Brun later, or talk to him twice after you retrieve his son and you can give him 100 gold for 500 additional experience points. If you retrieve his son before talking with him, just talk to him three times to get the conversation about giving the farmer money.</li>
+                    <li data-id="playthrough_7_4">Gerde the ankheg ranger will tell you of the ten ankheg limit in this neck of the woods. Gerde will offer to buy Ankheg exoskeletons. I exceeded my limit with no ill effects.</li>
+                    <li data-id="playthrough_7_5">In the southwest, three fishermen, Jebadoh, Sonner and Telmen are talking about Tenya the priest of Umberlee. The fishermen ask you to go kill the evil Tenya who they claim is ruining their fishing with evil spells. You can agree to kill her, do so and return for a reward in gold and 1000 experience points. If you agree to go talk to her, she will reveal the true nature of the fishermen as evil and allow you to return and demand that they give up the bowl of water elemental control that they have and receive 2500 experience points. Tenya is found north of the Baldurs Gate bridge on map 0900.</li>
+                    <li data-id="playthrough_7_6">Nestor, a ranger, will appear and talk to the party. If the party has a very low reputation, Nestor will attack. Quinn in Chapter 5 will ask you to return here to look for Nestor's dagger. Quinn is convinced that Nestor was killed by Ankhegs.</li>                   
+                </ul>
+
+                <a name="Chapter 3: Larswood"></a>
+                <h3><a href="#Chapter 3: Larswood">Chapter 3: Larswood</a>  (map 2900) <span id="playthrough_totals_8"></span></h3>
+                <ul>
+                    <li data-id="playthrough_8_1">Larswood is north east of Beregost and south west of Friendly Arm.</li>
+                    <li data-id="playthrough_8_2">The woods are infested with green talon elite archers with magic arrows, armor, and weapons. Nice stuff.</li>
+                    <li data-id="playthrough_8_3">The tower near the center is loaded with gibberlings.</li>
+                    <li data-id="playthrough_8_4">In the northeast there is a "stonehenge" construction site, with two druid brothers. One of the brothers accosts your group and you have to kill him. The other brother seems to understand. You may be able to save the brother by casting hold on him. If you question the second "brother" enough, he will admit to being a dark druid or some such and admit that he poisoned the others and is glad that you helped kill the last brother. He actually wants to take over the site and says that you need to die now that you know his treachery. Charles "Chuckwagon" Griffith</li>
+                    <li data-id="playthrough_8_5">In the southeast part of the wood is a bandit named Teven who robs you. If you ask to to join the bandits and if you are clever he may let you join the group. Say that they are the only profitable venture on the sword coast.</li>
+                    <li data-id="playthrough_8_6">Also in the woods are dire wolves and dogs.</li>
+                </ul>
+
+                <a name="Peldvale North of Larswood"></a>
+                <h3><a href="#Peldvale North of Larswood">Peldvale North of Larswood</a>  (map 2400) <span id="playthrough_totals_9"></span></h3>
+                <ul>
+                    <li data-id="playthrough_9_1">Peldvale is loaded with bandits to hunt.</li>
+                    <li data-id="playthrough_9_2">You will also find black talon elite warriors here in groups of 6.</li>
+                    <li data-id="playthrough_9_3">Viconia, a female, neutral evil, dark elf cleric NPC, is found in the northwest corner of the map area. Viconia is being pursued by a Flaming Fist warrior who will demand that you give her up to death. If you do not give her up, you will loose 2 reputaion points. We kept her and gave her a cursed helm of reversed alignment. The helm made her lawful good. She made a very good travelling companion after that. If you give up Viconia to the Flaming Fist warrior and Viconia runs away, you will be approached by Biff the Understudy, a human, male, fighter of unknown alignment with mediocre stats of 6 across the board. Biff will clone every time that you kill another Flaming Fist warrior to defend him until you have two Biffs in your party. Biff is almost useless and his picture is a questionmark. The game bombed shortly after these encounters with the legendary Biff.</li>
+                    <li data-id="playthrough_9_4">Peldvale is where you find Raiken the bandit. Raiken talks to your group. Tell him you want to join his group. Then select choice #4 when he asks why. Coice #4 says that his group is the only one showing a profit on the sword coast. Raiken will say he likes you and that the bandit chief will like you as well. You are immediately teleported to a conflict with the bandit chieftan. If you have previously killed the bandit chief, the game will lock up.</li>
+                    <li data-id="playthrough_9_5">You will also run into a hunter or druid in the north central area who will talk with you and then leave.</li>
+                </ul>
+
+                <a name="Wood of Sharp Teeth"></a>
+                <h3><a href="#Wood of Sharp Teeth">Wood of Sharp Teeth</a><span id="playthrough_totals_10"></span></h3>
+                <ul>
+                    <li data-id="playthrough_10_1">Sharp Teeth is really Larswood and Peldvale.</li>                   
+                </ul>
+
+                <a name="Bandit Camp and end of Chapter 3"></a>
+                <h3><a href="#Bandit Camp and end of Chapter 3">Bandit Camp and end of Chapter 3</a>  (map 1900) <span id="playthrough_totals_11"></span></h3>
+                <ul>
+                    <li data-id="playthrough_11_1">You cannot get into this area before chapter 3.</li>
+                    <li data-id="playthrough_11_2">You may need to go to Bereghost first and find the mage in the Feldpost Inn. The mage is in the southwest room on the second floor and you can either convince him to tell you the location of the bandit camp or you can kill him and read the letter. If you then go to the front of the blacksmith shop, Elminster will appear and tell you where the bandit camp is.</li>
+                    <li data-id="playthrough_11_3">Try walking there from the Friendly Arm Inn. Just keep walking East on the map and then North. It should take you there. If not when you walk around in the area North and East of Friendly Arm Inn there will be a bandit who tries to rob you. Tell him you want to join his group of bandits, then he will take you there. Good luck.</li>
+                    <li data-id="playthrough_11_4">Talk to any bandits in Larswood or Peldvale who will talk to you and try to join their group. If you do this you will be taken to the bandit camp.</li>
+                    <li data-id="playthrough_11_5">Alternatively, you can kill all the bandits at the crossroads, map 2800, and a captured bandit will appear and reveal the location of the bandit camp.</li>
+                    <li data-id="playthrough_11_6">If you join the bandit group they will take you to the bandit camp. Tazok, the bandit leader, wants you to fight him to prove your worth. After you fight him you have "free run" of the camp, but the bandits like to fight so fight when attacked.</li>
+                    <li data-id="playthrough_11_7">Explore the entire bandit camp area.</li>
+                    <li data-id="playthrough_11_8">I used my thief to explore this area and open chests, sneaking and fighting when needed.</li>
+                    <li data-id="playthrough_11_9">There are ruins to the southwest complete with undead after dark and the bandit camp is in the north central and north east area.</li>
+                    <li data-id="playthrough_11_10">If you kill the bandit who will let you join, you will miss the cutscene, but you can still kill the bandits and make your way to the large tent in the north-east (upper-right) of the camp. This is Tazok's tent.</li>
+                    <li data-id="playthrough_11_11">If you joined the bandit gang, when you get to the large tent in the northeast of the camp, Credus will give you the task of guarding Tazok's tent, and he will go inside the tent.</li>
+                    <li data-id="playthrough_11_12">Ardendor Crush found on the west side of the bandit camp is a special grey hobgoblin leader of the Crush hobgoblin group. Ardendor will lecture you and tell you to stay to your side of the camp.</li>
+                    <li data-id="playthrough_11_13">Taugosz Khosan "Tenhammer" is the leader of the Black Talon found in the bandit camp just east of Tazok's tent. If you joined the bandit gang Taugosz will lecture your group and advise them to avoid the hobgoblins and Gnolls since the alliance is only temporary.</li>
+                    <li data-id="playthrough_11_14">Garllax, is the gnoll chieftan of Garllax's Clan of Gnolls, who are found in the cave in the north central part of the camp. Other Gnolls are found in a tent just to the north west of the cave. Garllax will tell you that you smell wrong and attack after talking a while.</li>
+                    <li data-id="playthrough_11_15">Once you enter Tazok's tent you will end chapter 4 and start a fight. Ender Sai is inside Tazok's tent.</li>
+                    <li data-id="playthrough_11_16">After the fight, talk to the thief you find here near the chest for the location to cloakwood.</li>
+                </ul>
+
+                <a name="Chapter 4: Cloakwood Forest"></a>
+                <h3><a href="#Chapter 4: Cloakwood Forest">Chapter 4: Cloakwood Forest</a>  (maps 2200, 2100, 1600, 1700 and 1800) <span id="playthrough_totals_12"></span></h3>
+                <ul>
+                    <li data-id="playthrough_12_1">The cloakwood forest is inaccessable prior to chapter 4. It will open up when chapter 3 opens.</li>
+                    <li data-id="playthrough_12_2">There are actually four map areas to the cloakwood forest and the mines area making five areas in all. The forest is infested with monsters and difficult to find places you can rest. The cloakwood is divided into cloakwood one, map 2200, cloakwood two, map, 2100, cloakwood three, map 1600, cloakwood four on map 1700 and the cloakwood mines on map 1800.</li>
+                </ul>
+
+                <a name="Cloakwood One,  west of Friendly Arm Inn"></a>
+                <h3><a href="#Cloakwood One,  west of Friendly Arm Inn">Cloakwood One,  west of Friendly Arm Inn</a>  (map 2200) <span id="playthrough_totals_13"></span></h3>
+                <ul>
+                    <li data-id="playthrough_13_1">On the Cloakwood map one, map 2200, just west of the Friendly Arm Inn, you will find the NPC named Coran on the bridge in the northwest. Coran is a Chaotic Good Elf who is a Fighter/Thief multi-class. If you agree to help him slay the wyverns, he will join your group. Do not take too long looking for the Wyverns since he will leave your group never to return if you do not find them quickly. Again do not talk to him with six people in your party. Dismiss someone at the Friendly Arm and return to pick him up. Coran will leave your group within 10 days if you do not kill any wyverns and take their heads. There is a wyvern cave in map cloakwood four, map 1700.</li>
+                    <li data-id="playthrough_13_2">There is a hunting lodge on Cloakwood map one, map 2200. Aldeth Sashenstar will appear and ask for help defending himself against Seniyad and his druids. If you side with Aldeth you receive 3500 experience points, a potion of super heroism and you will be allowed to participate in another subplot in chapter 5. If you side with Seniyad, you receive safe passage through cloakwood and 2000 experience points. I recommend that you side with Aldeth.</li>
+                    <li data-id="playthrough_13_3">A group of taslois have a cloak of non-detection. This is Old Gurk's famous cloak. Return the cloak to Gurk to complete the quest.</li>
+                    <li data-id="playthrough_13_4">If you kill the hunter found here, his brother will show up near The Wide in Baldur's Gate. His brother has a heavy x-bow of acuracy and a mace +2.</li>
+                </ul>
+
+                <a name="Cloakwood Two,  west of Cloakwood One"></a>
+                <h3><a href="#Cloakwood Two,  west of Cloakwood One">Cloakwood Two,  west of Cloakwood One</a>  (map 2100) <span id="playthrough_totals_14"></span></h3>
+                <ul>
+                    <li data-id="playthrough_14_1">The cloakwood two map, map 2100, is just west of the cloakwood one map. On the cloakwood 2 map you will find Tiber in the northeast, who is looking for his brother Chelak who has come to the wood to clean out the spider's nest. Agree to find Chelak for Tiber. The spider nest is in the northwest corner of the level. Kill the spiders and the spider queen in the nest and find Chelak's body in the treasure trove there. Return the body to his brother Tiber. You will also find the magical short sword Spider's Bane here.</li>
+                    <li data-id="playthrough_14_2">You get to cloakwood map three by crossing a river in the northwest corner of the cloakwood map two and exiting the map. Cloakwood three is northwest of cloakwood #2.</li>
+                    <li data-id="playthrough_14_3">In Cloakwood 3, map 1600, there is Eldoth, an evil NPC, who wants you to help him kidnap Skie, the daughter of Entar Silvershield, a Duke of Baldur's Gate. I recommend that you take Eldoth up on his offer and take him into your party. The subplot in Baldur's Gate envolving Entar is interesting. Take Eldoth back to the Friendly Arm Inn and drop him off to reclaim later.</li>
+               </ul>
+
+                <a name="Cloakwood Three,  west of Cloakwood Two"></a>
+                <h3><a href="#Cloakwood Three,  west of Cloakwood Two">Cloakwood Three,  west of Cloakwood Two</a>  (map 1600) <span id="playthrough_totals_15"></span></h3>
+                <ul>
+                    <li data-id="playthrough_15_1">Tasloi are here.</li>
+                    <li data-id="playthrough_15_2">Laskal, a druid and protector of Cloakwood, tests your group by telling them he has a message for the leaders of the Iron Throne. When you say you are against the Iron Throne, he tells you their stonghold is east of here.</li>
+                    <li data-id="playthrough_15_3">There are a bunch of evil druids, called shadow druids, both in the map and inside a large tree in the west center of the map, who will attack your group.</li>
+                    <li data-id="playthrough_15_4">In the stonehenge like area west of the map center is Faldorn, a true, neutral, human, female, druid, who will join your group to eliminate the evil Iron Throne from her forest.</li>
+                    <li data-id="playthrough_15_5">In a Wyvern cave found north of the Center of the map is Peter of the North, an evil guy, training small wyverns to guard the Cloakwood mines. Keep talking to Peter and he will attack you. There are no large wyverns here. You can only get the heads that Coran is looking for from large wyverns, so you must move on to cloakwood four, map 1700 to solve Coran's quest.</li>
+                </ul>
+
+                <a name="Cloakwood Four,  east of Cloakwood Three"></a>
+                <h3><a href="#Cloakwood Four,  east of Cloakwood Three">Cloakwood Four,  east of Cloakwood Three</a>  (map 1700) <span id="playthrough_totals_16"></span></h3>
+                <ul>
+                    <li data-id="playthrough_16_1">Cloakwood 4, map 1700, is east of cloakwood 3. You must cross the bridge from lower right southeast to get to northeast to get to this area. Upon entering this area a video showing Wyverns will be shown. There are hamadryads and wyverns here.</li>
+                    <li data-id="playthrough_16_2">Cloakwood 4: There is a large cave in the southwest which has two adult and three juvenile wyverns.</li>
+                </ul>
+
+                <a name="Cloakwood Mines,  east of Cloakwood Four"></a>
+                <h3><a href="#Cloakwood Mines,  east of Cloakwood Four">Cloakwood Mines,  east of Cloakwood Four</a>  (map 1800) <span id="playthrough_totals_17"></span>
+                <ul>
+                    <li data-id="playthrough_17_1">Cloakwood mines, map 1800, are east of cloakwood 4. There are black talon elite and wolves here. Laradar will approach you with a group of black talon elite. Laradar will go away if you mention wyverns, but will fight if you mention your real purpose.</li>
+                    <li data-id="playthrough_17_2">There is an island in the center of the map that can only be entered from the west central portion of the map across a bridge going east.</li>
+                    <li data-id="playthrough_17_3">On the other side of the bridge there is another group of assassins waiting, Drassus, Genthore, Kysus, and Rezdan. There are two mages and two fighters that you must kill, one with boots of speed.</li>
+                    <li data-id="playthrough_17_4">The mines have four levels. The first level is where th miners and the ore is found, it looks like regular mine tunnels. On the first level, map area 1801, get the miners to go to the surface and clean up the rest of the guards by talking with them and kill any guards you find. Also, find the plug in the northeast that requires a key from Davaeorn, the mine boss. The stairs down are in the southeast corner at 1446x1471. You take the shack elevator down to this level.</li>
+                    <li data-id="playthrough_17_5">On the second level, map area 1804, find the miner Rill in a cell with guards and give him 100 gold to help clean up the mess. Pay the prisoner 100 gold to obtain his help freeing the other prisoners. Don't be greedy here, you need his help. Also on level two you will find Yeslick, a fighter (4), cleric (5), male, dwarf NPC, who can be added to your group. The way down in this area is at 358x1609 in the southeast corner. This area has three secret doors that you can find with your thief skill at 1197x1417, 2027x1035, and 1831x1804.</li>
+                    <li data-id="playthrough_17_6">Cloakwood mines level three, map 1803, is where there are a lot of guards and living quarters. You will find a mage named Natasha in the north east of the level who gives a good fight and an ogre mage who tortures the prisoners. In the southern part of the level is the way down to level 4 at 2695x2850. To find the way down go all the way left or west until you can go no further. Follow the corridor south until you dead end. Go east from the dead end and you should find stairs.</li>
+                    <li data-id="playthrough_17_7">At the bottom of the mines, locate the evil wizard Davaeorn and kill him. Davaeorn will summon Battle Horrors to fight you. I used summon monster several times to keep the horrors away from my group, while killing Davaeorn with archers and stones. Then I killed the horrors with lightning. One lightning bolt killed each horror. Magic weapons did not even touch them. The apprentice can be killed or released, your option.</li>
+                    <li data-id="playthrough_17_8">Exit the mines via a mine elevator in the far west or left part of the level to the first level. Make sure you walk around the elevator slowly before you leave. If your leader is wearing boots of speed you will not trip the switch which will open Baldur's Gate to you. When you take the elevator, you end chapter four. Use the key to flood the mines at the big valve, after you talk to the character next to the valve. Flooding the mines is only possible if you freed the prisoners. Once you enter the mine elevator at the back of the head mage's room to go upstairs to flood the mines, you end chapter 4.</li>
+                </ul>
+
+                <a name="Chapter 5: Baldur's Gate"></a>
+                <h3><a href="#Chapter 5: Baldur's Gate">Chapter 5: Baldur's Gate</a><span id="playthrough_totals_18"></span></h3>
+                <ul>
+                    <li data-id="playthrough_18_1">Baldur's Gate is inaccessable until chapter 5. Flooding the mines lets you get into this last area. You can return to any previous level to find new or complete some of the old quests at this point. The game will end in chapter seven and you will no longer have free passage through Baldur's Gate after chapter five, so be careful not to end this chapter before you have finished all the side quests that you want to.</li>
+                    <li data-id="playthrough_18_2">The area of Baldur's Gate is divided into 10 different areas: northwest, north central, north east, central west, central, central east, south west, south central, south east, and the bridge areas. The central west, central and north east areas are a menace to navigation in that they have an area which is inside the inner wall and an area outside the inner wall. If you want to get to the central area outside the inner wall, you must walk to the west from the central area outside the wall or from the south west area north. Going to the west central area you must come from either the north west area or the central area north of the wall. If you want to get to the northeast area inside the wall, just walk north from the east central location. The inside of the wall north east area is only accessable from the north central area.</li>
+                    <li data-id="playthrough_18_3">Scar introduces himself as you cross the bridge. He contracts with you to investigate the Seven Suns trading center. Scar tells you that Jhasso is the head of the center, who is acting strangely. If you tell Scar about the Iron Throne, he will ask you to shadow Jasso with stealth and report back to the Flaming Fist. The Seven Suns is found in the southwestern portion of Baldurs Gate. The Flaming Fist Keep or Barracks is also found in this area just to the west of the Seven Suns. Be careful as the merchant trading center is in a building which is very similar to the Seven Suns. The merchant trading center is locked and the lock cannot be picked.</li>
+                    <li data-id="playthrough_18_4">Returning to Scar in the Flaming Fist Gaol once you have killed all the dopplegangers in the Seven Suns will complete the quest. You can go directly to Eltan to start the quest that will end this chapter. You do not have to work with Scar to get the quest. Scar may have been killed by Angelo before you get back to him. Angelo is one of Sarevok's lieutenants.</li>
+                    <li data-id="playthrough_18_5">DO NOT DO THIS UNTIL YOU FINISH ALL Baldur's Gate Subquests THAT YOU WANT TO. You can go directly to Duke Eltan on the second floor (upstairs) in the Flaming Fist Gaol to get the Iron Throne mainquest. Eltan will ask you to investigate the Iron Throne. Go to the Iron Throne Mansion in the northwest corner of the dock area map. You can kill the guys on the top level of the mansion or search the mansion until you find out that Reitar is in Candlekeep. The Iron Throne Mansion has five levels, maps 0612 to 0616. One level is in the basement accessed by stairs to the right of the door out to the street. The basement goes to the sewers in the northwest of the westernmost section of them through the area that goes directly west (left) from the top intersection of the west sewer section. The other areas go to the top floor. If you go all the way to the top, you will have a big fight. On the first floor, we told the guard we were merchants from Sembia with business with the Iron Throne leaders. On the second floor we told the guard we were delivering a message to Sarevok. On the third floor we told them we were merchants from Sembia. Dustus Gurn, assistant chief accountant, told us that Rieltar and Brunos went to Candlekeep. If you threaten Thaldorn on level three of the Iron Throne he will tell you that Bruno and Rietar have gone to Candlekeep. If you kill the guys on the fourth floor, get the documents describing their plan, the letter from Tulth to Rieltar. You will find Zalamar Cloud Wulfe, Gardush, Naamanj Diyab, Asim and Ala, and Lyle Espejo on the fourth floor. Save the game. Take these documents back to Scar and he will take you to Duke Elton. If you cannot find Scar after looking go directly to the Duke. The chapter ends when you report to Duke Elton. Elton gives you the tome of great value which you will need to get into Candlekeep in chapter 6. You are immediately teleported to Candlekeep so if you had not slots open, the tome is dropped on the ground and you have to retun to Duke Elton's room to get it. Alternatively, you can go directly to Duke Eltan on the second floor of the Flaming Fist garrison and get the task to investigate the Iron Throne, and return to Elton later to report your findings after finding out that Reitar is in Candlekeep.</li>
+                </ul>
+
+                <a name="Chapter 6: Return to Candlekeep"></a>
+                <h3><a href="#Chapter 6: Return to Candlekeep">Chapter 6: Return to Candlekeep</a>  (map 2600) <span id="playthrough_totals_19"></span></h3>
+                <ul>
+                    <li data-id="playthrough_19_1">You cannot go back into candlekeep until you get the Tome of Great Value to purchase admittance. You will get this from Duke Eltan at the end of chapter 5, just before he teleports you to Candlekeep.</li>
+                    <li data-id="playthrough_19_2">You are teleported back to Candlekeep at the end of chapter 5.</li>
+                    <li data-id="playthrough_19_3">Give the tome of great value to the guard to gain admittance.</li>
+                    <li data-id="playthrough_19_4">Once you have entered Candlekeep you have 20 minutes before the Gate Warden arrives to arrest the party. You will be taken to Candlekeep dungeon, map 2626. In my game this happened in the library</li>
+                    <li data-id="playthrough_19_5">Due to the time constraints, you may want to go to the library immediately to find Gorion's final letter and magic scrolls on the shelves in the library. Take the scrolls as you will need them when you are in the catacombs.</li>
+                    <li data-id="playthrough_19_6">In the priest's quarters a doppleganger posing as a priest is preparing to chow down on a dead cat. Keep talking to him until he changes into the doppleganger and you can kill him. Anyone who does not know you should be questioned repeatedly until they turn to dopplegangers.</li>
+                    <li data-id="playthrough_19_7">You will be able to meet Cadderly, who is from another set of books about the Forgotten Realms, on the east or right side of the inner courtyard. Also to the south of the inner courtyard are four singers, who sing propheses.</li>
+                    <li data-id="playthrough_19_8">Inside the library itself, there are six floors to the Candlekeep library above the ground.</li>
+                    <li data-id="playthrough_19_9">Ulrant is in his room on the top floor of the library, while no one seems to know where Terhoril is.</li>
+                    <li data-id="playthrough_19_10">Kevoris, who is really Sarevok, the boss you will kill in the last battle, gives you a Gorion ring of protection +1 which is ok to use on the second floor of the library, map 2609. Some have met him on the first floor, map 2608. Sarevok as Kevoris tries to get you to kill the leaders of the Iron Throne. If you don't kill them Sarevok gets a group of dopplegangers to dress up as you and has them kill them.</li>
+                    <li data-id="playthrough_19_11">You will come across Reiltar, Brunos and two knights, Kestor and Tuth, who are meeting in the library on level three, map 2610. You can kill them or not, your option. Sarevok will have them killed in any event and you will be accused of murdering them and imprisoned.</li>
+                    <li data-id="playthrough_19_12">If you go upstairs you will find Gorion's room on the south side of the fifth floor, map 2612. Open Gorion's chest and get the final letter from Gorion to help you understand the situation you are in. I found the wrong room and opened the wrong chest and was approached by a guard who fined me all my gold or one million gold whichever was smaller for robbing in Candlekeep.</li>
+                    <li data-id="playthrough_19_13">You will be accused of murder by the Gate warden later and put into a cell. Do NOT kill the Gate Warden or his men. Ulrant will appear just after you are jailed to tell you that you will be sent to Baldur's Gate for executtion. In the jail cell you will be met by Tethoril who will teleport you to Candlekeep Caverns, just below the library.</li>
+                    <li data-id="playthrough_19_14">The area below the library is composed of three areas: the Crypts of Alondo, the catacombs and the caverns.</li>
+                    <li data-id="playthrough_19_15">The crypts or tombs area is very dangerous and loaded with traps. There are two or three Tomes of power here including the Tome of Understanding (wisdom +2) and the Tome of Strength. The tomes are found within the sacophagi or coffins in the crypts. You enter this level in the lower right (southeast) and work your way to the exit. Make sure you see all seven crypts before you leave.</li>
+                    <li data-id="playthrough_19_16">The catacombs below Candlekeep are loaded with dopplegangers. You enter this area also in the southeast or lower right into a large room surrounded by six smaller room and work your way to the exit in the northeast or upper left along a short corridor with another six rooms off of it. Just about everyone here is a doppleganger. If someone does not recognize you or is acting strangely question him/her until they reveal that they are dopplegangers and you can kill them. But where there is danger there is good treasure and you will find tombs of strength and wisdom here. There are twelve rooms with dopplegangers in them here.</li>
+                    <li data-id="playthrough_19_17">You will also come across Phlydia's doppleganger who you will have to kill. Dopplegangers of virtually everyone in Candlekeep will show up to confront and fight the group in the the catacombs.</li>
+                    <li data-id="playthrough_19_18">Elminster and Gorion dopplegangers will show up later in the level.</li>
+                    <li data-id="playthrough_19_19">Prat is in the catacombs and if you tell prat that you are Sarevok, he will let you pass without a fight.</li>
+                    <li data-id="playthrough_19_20">The final level is the caverns area which you enter in the center top (north central) and leave in the lower left or southwest.</li>
+                    <li data-id="playthrough_19_21">This area has bassilisks in it so be sure to be carrying scrolls of protection from putrefaction which last longer and more reliably than the potions of silver eyes.</li>
+                    <li data-id="playthrough_19_22">Close to the exit in the southwest (lower left), Diarmid a member of Sarevoks group will mistake you for his people and escape. Arcanis and Deder are two more of Serevok's people you will meet near the entrance to the caverns. If you tell Diarmid that you are Prat and talk to him for a while, he will let you pass without a fight.</li>
+                    <li data-id="playthrough_19_23">Once you make it out of the catecombs or tombs you will have to go back to Baldurs Gate.</li>
+                    <li data-id="playthrough_19_24">Completing Chapter 6 gives the party 9600 experience points.</li>
+                </ul>
+
+                <a name="Chapter 7: Baldurs Gate after Candlekeep"></a>
+                <h3><a href="#Chapter 7: Baldurs Gate after Candlekeep">Chapter 7: Baldurs Gate after Candlekeep</a><span id="playthrough_totals_20"></h3>
+                <ul>
+                    <li data-id="playthrough_20_1">You are now a criminal. If caught you will be imprisoned. If you cannot escape, you will be executed. You must avoid Flaming Fist guards or be arrested. A group of Flaming Fist will approach the group if they spend more thatn five minutes within any Baldurs Gate area other than the sewers and the inside of buildings. When travelling, use the sewers to avoid the Flaming Fist guards.</li>
+                    <li data-id="playthrough_20_2">You may want to try some of the chapter 7 subplots before going to the Ducal Palace. See the subplots section below.</li>
+                    <li data-id="playthrough_20_3">Go to the Iron Throne Mansion and you will find it in some sort of turmoil.</li>
+                    <li data-id="playthrough_20_4">Go to the top floor of he temple and fight the invisable wizard. Kill the wizard and take the essential stuff she is carrying, especially Sarevok's diary. One of the scrolls describes the underceller and the UnderCity.</li>
+                    <li data-id="playthrough_20_5">Make your way to the basement and enter the sewers through a secret door in a group of barrels.</li>
+                    <li data-id="playthrough_20_6">In the sewers, make your way to the Undercellar which is an exit from the level just below where you entered the sewers.</li>
+                    <li data-id="playthrough_20_7">A whorehouse proprietor is found here.</li>
+                    <li data-id="playthrough_20_8">The whorehouse is the undercellar which is different than the undercity where the temple of Bhaal is found in the finale of the game. In the center of underceller whorehouse you will find Krystin and Slythe, two more assassins hired to kill you. Kill them without harming the "innocent" ladies of the evening. On his body is an invitation to the coronation of Grand Duke Sarevok. Gee wasn't he the bad guy behind this whole iron scheme.</li>
+                    <li data-id="playthrough_20_9">Go to the palace and use the invitation to get in. Level one, inside the Ducal Palace, map 0108, Kill the six dopplegangers who appear and protect Belt and Liia Jannath, his lady guest. If Belt and Liia die, you will be forced to fight waves of Flaming Fist warriors until you die and the game will end.</li>
+                    <li data-id="playthrough_20_10">Sarevok will accuse you of murder and all you have to do is to show Belt the diary. Sarevok will flee. His mage will teleport Sarevok to the Undercity. Sarevok should be invincible at this point so let him go.</li>
+                    <li data-id="playthrough_20_11">Belt will use his god to determine where Sarevok went and then teleport you to the thieves guild where you can stock up for the final battle.</li>
+                    <li data-id="playthrough_20_12">Talk to Denkod in the Thieves' Guild, map 0153, and he will tell the party that Sarevok went downstairs.</li>
+                    <li data-id="playthrough_20_13">Go downstairs in the Thieves Guild where you find the maze, map 0146. Fight the skeletons and jellies. Look out for all the traps.</li>
+                    <li data-id="playthrough_20_14">At the exit you will meet the wizard who teleported Sarevok out of the palace and you can either kill him or let him go. The wizard is next to the door to the Undercity area, map 0123, and the Temple of Bhaal, map 0125.</li>
+                </ul>
+
+                <a name="End Game: Baldur's Gate Undercity and Temple of Bhaal"></a>
+                <h3><a href="#End Game: Baldur's Gate Undercity and Temple of Bhaal">End Game: Baldur's Gate Undercity and Temple of Bhaal</a><span id="playthrough_totals_21"></span></h3>
+                <ul>
+                    <li data-id="playthrough_21_1">In the Elder Undercity, map 0123, you will need to make your way to Sarevoks House, The Temple of Bhaal, in the northwest corner of the map.</li>
+                    <li data-id="playthrough_21_2">On your way to Sarevok's house you will have to fight a group of assassins seeking a reward for your death. These are mercinaries hired by the Iron Throne and are a tough bunch of five or six adventurers.</li>
+                    <li data-id="playthrough_21_3">You will also have to battle skeleton warriors who are very tough.</li>
+                    <li data-id="playthrough_21_4">Save your game before fighting Sarevok. At Sarevok's house, The Temple of Bhaal, map 0125, there are wizards and fighters to take out and then Sarevok finally. You will find Angelo, Tazok and Semaj here to fight with Sarevok. Sarevok needs to be attacked with Melee weapons, since he cannot be killed by magic. Ordinary missiles cannot harm this crowd, you will need majic projectiles or just melee weapons. This is the end. Watch the nice cut scene animation where the god's statue is finally removed from the pantheon of the gods in the underworld.</li>
+                    <li data-id="playthrough_21_5">If you have Minsc in your party, Boo will help you kill Sarevok in the final battle.</li>
+                </ul>
+
+                <a name="Crossroads of the Coastway and the Way of the Lion"></a>
+                <h3><a href="#Crossroads of the Coastway and the Way of the Lion">Crossroads of the Coastway and the Way of the Lion</a>  (map 2800) <span id="playthrough_totals_22"></span></h3>
+                <ul>
+                    <li data-id="playthrough_22_1">Chapter 1: Elminster appears to talk with you when you enter this map from Candlekeep in the early part of the game.</li>
+                    <li data-id="playthrough_22_2">Chapter 3: There are bandits in this area to kill.</li>
+                    <li data-id="playthrough_22_3">Chapter 3: After killing all the bandits in this area, a captured bandit will apear and reveal the location of the bandit camp on map area 1900.</li>
+                    <li data-id="playthrough_22_4">This area is infested with giant spiders to the east of the level. The giant spiders include phase, sword, and others. The phase spiders cast entangle. Move away from the center of the entangle blast and attack the phase spider in melee combat. Kill phase spiders quickly. They can be lethal.</li>
+                    <li data-id="playthrough_22_5">Fahrington, found northwest of the red wizard temple, wants you to retrieve his scroll from a Tasloi who is east of where you find him. If you return the cursed scroll of foolishness to him, he rewards you with 300 experience.</li>
+                    <li data-id="playthrough_22_6">In the dead center of this area are four red wizards of Thay on a temple with a set of steps that face the southwest. The mages are Denak, Diana, Lasala, and Brendan.Talk with them but you will have to kill them. The mage in the front has a ring of power. Bows can stop the casting quickly. Nice stuff. Scrolls of Grease, Aggonazar's Scorcher, Burning Hands, Armor, Protection from Petrifaction, Blindness, robes of protection from cold (2), electricity, and fire, and a ring of energy that can send many charges of energy like spells at your enemies.</li>
+                </ul>
+
+                <a name="Shipwreck north of lighthouse south of Candlekeep"></a>
+                <h3><a href="#Shipwreck north of lighthouse south of Candlekeep">Shipwreck north of lighthouse south of Candlekeep</a>  (map 3100) <span id="playthrough_totals_23"></span></h3>
+                <ul>
+                    <li data-id="playthrough_23_1">The western edge by the sea coast is loaded with siren who are 2000 experience points each. They will charm your party members. Best to get off some arrows at a distance to stop the spell casting. Once charmed I moved my men off at a distance to wait until the charm expired. Dispel Magic! Cast by a Cleric from a respectable distance. Will take down their invis too, as well as get rid of that annoying charm. Follow with a silence 10' cast at the GROUND (not the Sirine, no save if cast at ground), and generous portion of arrows. Rinse vigoursouly. Other strategies are summon monsters and send them in. Sirens can only cast their charm two times. Another is to use dispell magic or stinking cloud on the area near them, then follow up with arrows and stones.</li>
+                    <li data-id="playthrough_23_2">You meet The Surgeon, the brother of Davaeorn, who will heal your group, if needed.</li>
+                    <li data-id="playthrough_23_3">Carrion crawler and sirens are here.</li>
+                    <li data-id="playthrough_23_4">Mad Arcand will give 300 experience points and a Potion of Fiery Burning to the party if they give him the ring of folly from the shipwreck. The shipwreck is west of Arcand in the sand.</li>
+                    <li data-id="playthrough_23_5">There is a wrecked ship in the northwest on the sandy shore guarded by a Siren with magic items. The wrecked ship has a ring of folly.</li>
+                    <li data-id="playthrough_23_6">Also found here are 2 ghasts in NE, 4 kobalds in SW and ogrillion in East center.</li>
+                    <li data-id="playthrough_23_7">Shoal will kiss any male leader of the party. If a female leads Shoal will just go away. The effects of Shoal's kiss are lethal. If members of the group can damage Shoal she will reveal that she has been forced to waylay travellers by Droth, an evil, ogre mage. Shoal will then resurect the dead character. Shoal has a helmet of defense, which you can pick pocket or get as treasure.</li>
+                </ul>
+
+                <a name="Beregost Temple District just east of Beregost"></a>
+                <h3><a href="#Beregost Temple District just east of Beregost">Beregost Temple District just east of Beregost</a>  (map 3400) <span id="playthrough_totals_24"></span></h3>
+                <ul>
+                    <li data-id="playthrough_24_1">The Temple of Lithander just to the east of Beregost up the path offers some services such as healing, potions and identification.</li>
+                    <li data-id="playthrough_24_2">The head priest named Keldath Ormlyr of the temple of Lithander also called the Temple of the Morning will give you 1000 experience points and 5000 gold for Bassilus' holy symbol of Cyric and 1000 gold for the head of a wyvern. If you do not have the holy symbol, Keldath will tell you to go get it and return to the temple for your reward.</li>
+                    <li data-id="playthrough_24_3">The Dawn temple and priest are a diversion and they offer no services in addition to having no doors or furniture. Quest?</li>
+                    <li data-id="playthrough_24_4">East central area are vampiric wolves who can only be harmed with magic weapons.</li>
+                    <li data-id="playthrough_24_5">Monsters include half-orcs who will talk then fight.</li>
+                    <li data-id="playthrough_24_6">Cattack, a bandit, will demand money and attack.</li>
+                    <li data-id="playthrough_24_7">Drunk character claims to be a lich and asks for money. The character is really a drunk so walk away.</li>
+                </ul>
+
+                <a name="High Hedge just west of Beregost"></a>
+                <h3><a href="#High Hedge just west of Beregost">High Hedge just west of Beregost</a>  (map 3200) <span id="playthrough_totals_25"></span></h3>
+                <ul>
+                    <li data-id="playthrough_25_1">There is a reclusive wizard here named Thalantyr. Select that you want to talk to him and that you wish to sell magic artifacts and he will buy and sell with you. The mage is in the inner area and you will not have to fight his minions once you talk to him.</li>
+                    <li data-id="playthrough_25_2">The stuff the wizard has to offer is good and expensive. Very nice stuff, especially for wizards. Most of the spells in the game are here, such as vampiric touch, horror, and protection from putrefaction.</li>
+                    <li data-id="playthrough_25_3">Outside you will fight skeletons throwing knives and bears. The skeltons give you skulls that Thalantyr will buy.</li>
+                    <li data-id="playthrough_25_4">You can return to Thalantyr with Melicamp, his ex-apprentice who has metamorphed to a talking chicken. Thalantyr will agree to transform Melicamp to a human again if you give him a skull. Save the game first, since Melicamp may either be killed or restored. You get 2000 experience points for successful completion of the quest. Some say tha Melicamp can be found in the abandoned farm house in the northwest part of the level, but I did not find him there.</li>
+                    <li data-id="playthrough_25_5">The party NPC Kivan can be found on this map to the northeast of high hedge keep. He is hunting bandits and wants your help. If you agree to help, he joins your party.</li>
+                </ul>
+
+                <a name="Basilisk Area east of Beregost Temple District"></a>
+                <h3><a href="#Basilisk Area east of Beregost Temple District">Basilisk Area east of Beregost Temple District</a>  (map 3500) <span id="playthrough_totals_26"></span></h3>
+                <ul>
+                    <li data-id="playthrough_26_1">In the east central area you will find Kovak, a ghoul who will walk with your group around the level and fight with them if you say he can be friend if he does nothing to anger the group.</li>
+                    <li data-id="playthrough_26_2">In the NW corner you will find Shar-Teel, a chotic evil fighter, who will join your group if one of them bests her in a fight. I let her join and dismissed my warrior and mage, then went back and dismissed Shar-Teel who will wait for your return. Shar-Teel is a good fighter and you can make her lawful good with a cursed helm of reversed alignment. In Chapter Seven, if the group is captured in Baldur's Gate. She can talk to Angelo who will release the party from jail.</li>
+                    <li data-id="playthrough_26_3">In the dead center of this area are basilisks who will either stone or explode your characters with one breath. Reflect eyes potion, purchsed at High Hedge may help. Also the ghoul is immune to petrifaction as are those who take petrifaction potions. Summon minions to fight them for you.</li>
+                </ul>
+
+                <a name="Sea Watcher Ruins"></a>
+                <h3><a href="#Sea Watcher Ruins">Sea Watcher Ruins</a>  (map 3600) <span id="playthrough_totals_27"></span></h3>
+                <ul>
+                    <li data-id="playthrough_27_1">The lighthouse map area has a cave and a lighthouse ruins. The lighthouse is in the south-west and the cave is in the northwest.</li>
+                    <li data-id="playthrough_27_2">Safana, found east of the center of the map, offers to join the party to go searching for pirate treasure. Just to the northwest along the coast you will find Sil guarding the cave with here sireens.</li>
+                    <li data-id="playthrough_27_3">Sil, a sireen, with 2-3 of her tribe is guarding a cave near the beach. The cave holds three flesh golums. Sil will warn you to leave the area and will attack you 10 seconds later if you do not leave. There is a chest mounted in the wall of the cave that glows red like a trap when your cursor is over it. the chest contains 10 darts of wounding, potion of antidote, absorbtion, and infravision, elixer of health, 312 gold, manual of bodily health which causes a permanent +1 gain to constitution when used, a cloak of the wolf, and a wand of paralyzation.</li>
+                    <li data-id="playthrough_27_4">The most prominant landmark of the area two maps south from Candlekeep is the Sea Watcher Lighthouse. A boy is trapped here by wolves. If you kill the wolves and return to the boy's mother, Ardrouine, who is south-east of the lighthouse, you will receive 60 gold, 500 experience, and increase your reputation by 1.</li>
+                    <li data-id="playthrough_27_5">In the center of the level is Arkushule, a gypsy palm reader, who will tell your fortune up to a point. If you press her and try to get her to tell you what she has seen that she will not tell you about, she will turn on you and try to kill you.</li>
+                    <li data-id="playthrough_27_6">Another character named Pallonia is found here, but no quest is associated with her.</li>
+                </ul>
+
+                <a name="Stonehenge NW of Lake House"></a>
+                <h3><a href="#Stonehenge NW of Lake House">Stonehenge NW of Lake House</a>  (map 3700) <span id="playthrough_totals_28"></span></h3>
+                <ul>
+                    <li data-id="playthrough_28_1">This area is southwest of Beregost.</li>
+                    <li data-id="playthrough_28_2">Footy, a child, talks about how funny Bassilus and his spooks are.</li>
+                    <li data-id="playthrough_28_3">Bassalius is in the Stonehenge like area with about 30 ghouls and skeltons in the SE. Kill him for the reward or use hold person on him to break the possession. He is a mad priest of cyric. You will find cyric's symbol on him. Take the symbol to the temple of Lithander in Beregost for 5000 gold reward. Keep Bassilus talking for a very long period of time and all of his undead will be destroyed.</li>
+                    <li data-id="playthrough_28_4">Geltik, Zargal, and Malkax are half-orcs who will talk then fight you in the center of the map.</li>
+                    <li data-id="playthrough_28_5">In the NE you will find a "demonic chicken" who is really an apprentice mage who has transmuted himself to take back to High Hedge, or if you are adept enough attempt to transmute the chicken into a man. When I took the chicken back to high hedge, the mage there killed him. The mage needs a skeleton head which you can find just outside the keep in the center of the area. You may want to save the game, because there is a chance that the apprentice will not be restored. Restoring the apprentice yields experience points on its own.</li>
+                    <li data-id="playthrough_28_6">Other monsters include 4 zombies in the NW, 4 wargs in west-central, 3 hobgoblin elite in the south and 4 skeletons.</li>
+                </ul>
+
+                <a name="Lil Caster School"></a>
+                <h3><a href="#Lil Caster School">Lil Caster School</a>  (map 3900) <span id="playthrough_totals_29"></span></h3>
+                <ul>
+                    <li data-id="playthrough_29_1">A halfling, thief NPC offers you a "gem of true seeing" for 1000 gold. Save your chips. It is a fake.</li>
+                    <li data-id="playthrough_29_2">The school compound is in the northeast surrounded by a wall save an access area.</li>
+                    <li data-id="playthrough_29_3">Icjarud, an undead minion, can only be harmed by magic weapons. He has some nice stuff including a fancy helmet and some magic armor.</li>
+                    <li data-id="playthrough_29_4">Once into the school compound, stairs into the lower level, where the maze is are on the west side of the compound. There are lots of fireball traps here and some nasty monsters. Some magic items also.</li>
+                    <li data-id="playthrough_29_5">Lots of kobalds on the ground level of the school use bows to take you down</li>
+                    <li data-id="playthrough_29_6">In the northeast, there are some arrow firing skeletons.</li>
+                </ul>
+                
+                <a name="Minesite 2"></a>
+                <h3><a href="#Minesite 2">Minesite 2</a>  (map 4100) <span id="playthrough_totals_30"></span></h3>
+                <ul>
+                    <li data-id="playthrough_30_1">This map area is west of the lake house area, northeast of the Gnoll fortress, northwest of Xvart villiage, and south of the sea watcher lighthouse ruins.</li>
+                    <li data-id="playthrough_30_2">In the center of this area you find a caravan which is waylaid. There are two guys here. Do not attack and the madman will aproach you with a riddle. The captain of the guard, Brag, from Naskell is here. The answer to the riddle which "... has neither mouth nor teeth but devours all ..." is death. Return Brag to the temple of Torm in Naskell for a reward. This return is automatic if you choose the correct conversation options with him. Do not kill him outright, as you get more experience and fame for helping him out.</li>
+                    <li data-id="playthrough_30_3">In the north central part of this level you will come upon a group of guys excavating an ancient tomb. Charleston Nib is archeologist who asks for your help from thieves and other problems. Gallor is a mercinary hired to protect the expedition. Gallor approaches you and asks you to kill Nib and his diggers and sieze the magic item in the tomb for him. We told Gallor to buzz off and helped Nib who lead us into the tomb where Nib's diggers turned evil and attacked us. Nib warned us that the artifact was evil and asked us to leave so he could bury it there. We left Nib to his duty. Perhaps we will retun later to take the artifact. Nib did NOT seal the tomb. If you retrieve the cursed idol, you can sell it to Gallor or a doomsayer will later try to kill the party.</li>
+                    <li data-id="playthrough_30_4">Ba'ruk is found here with his kobald commandos. Ba'ruk talks then the kobalds attack.</li>
+                    <li data-id="playthrough_30_5">Also in this area you will find wolves, and gnolls.</li>
+                    <li data-id="playthrough_30_6">In the middle of the map, a caravan lies destroyed and Laryssa approaches you to plead for the life of Brage, who is the mad captain from Nashkell. If you spoke with the Temple of Torm guardian and others in Nashkell, you will know of the tragic story of Brage who emerged from the mines insane. It turns out that Brage has gotten his mits on a cursed magic sword of Berserking which has caused all the problems. Answer Brage's riddle with "Death." and you will be given an option to take him back to the Temple of Torm in Nashkell, where you will get experience, 1000 gold, and everlasting thanks from Torm for returning him. Laryssa will attack you if you tell her you will attack Brage.</li>
+                </ul>
+
+                <a name="Lake House NW of Naskell"></a>
+                <h3><a href="#Lake House NW of Naskell">Lake House NW of Naskell</a>  (map 4200) <span id="playthrough_totals_31"></span></h3>
+                <ul>
+                    <li data-id="playthrough_31_1">In the center of this area you will find Drizzt DoUrden fighting about a dozen Gnolls. He kills them all for you. If you can steal his armor and weapons from him, it is real good stuff, chain +4, scimitars +3 and +5, etc. You may have to kill Drizzt to get his armor. When you try to steal after getting his scimitars, you get a message that he has no valid items.</li>
+                    <li data-id="playthrough_31_2">In the northeast is Larock the Bandit, his mage girl friend and a demi-human henchman who waylay you just to the east of the lake. This is a tough fight as she will scare your group away. There is a reward for Larock. Get his knife and you can collect it.</li>
+                    <li data-id="playthrough_31_3">Monsters here include 2 pairs of ogres, 4 war dogs, 4 hobgoblins, 4 skeletons, and 2 half-ogres in the NE.</li>
+                </ul>
+
+                <a name="Farm NE of Naskell"></a>
+                <h3><a href="#Farm NE of Naskell">Farm NE of Naskell</a>  (map 4400) <span id="playthrough_totals_32"></span></h3>
+                <ul>
+                    <li data-id="playthrough_32_1">At the "abandoned" farm house, just to the south of center, a farmer, named Hulrick, seeks your assistance in saving his cow. The cow is to the west of the farmer and is being attacked by about 10 Xvarts. Agree to save the cow for one reputation point after returning to Hulrick to report.</li>
+                    <li data-id="playthrough_32_2">Also in this area groups of 3 ogre beserkers and kobalds.</li>
+                    <li data-id="playthrough_32_3">Three bandits will try to rob you after talking. Kill and loot them.</li>
+                    <li data-id="playthrough_32_4">Ogre Berserkers and Ogarillions guard a dead body with potions.</li>
+                    <li data-id="playthrough_32_5">Arghain, a bandit half-ogre has a magic two handed sword +1 and carries a lot of money with it Ogrillion henchmen. Argain will talk and then attack.</li>
+                    <li data-id="playthrough_32_6">Inside the cave you will find an Ettercap and a trap. Use ranged weapons and wait for the Ettercap to come to you and the Ettercap will spring the trap on itself. The trap will make the Ettercap easier to kill for 650 experience points and some potions.</li>
+                    <li data-id="playthrough_32_7">Sarhedra will challenge you to fight the Ogre and Ogrillion theives in the area. Talk to her to get the quest and talk again after killing them to get the experience points.</li>
+                    <li data-id="playthrough_32_8">I found a Water Opal at location AR 4400, x=1574, y=1488 under a stone just outside the cave of the Ettercap. Jonas</li>
+                </ul>
+
+                <a name="Fire Wine Bridge Ruins"></a>
+                <h3><a href="#Fire Wine Bridge Ruins">Fire Wine Bridge Ruins</a>  (map 4500) <span id="playthrough_totals_33"></span></h3>
+                <ul>
+                    <li data-id="playthrough_33_1">This area is linked through a dungeon like area to the Halfling villiage. The dungeon is found in the building just east of the south entrance onto the bridge.</li>
+                    <li data-id="playthrough_33_2">There are groups of skeletons, kobalds and ghouls here.</li>
+                    <li data-id="playthrough_33_3">On the center of the bridge in the center of the map is a poet named Poe who offers you a long song.</li>
+                    <li data-id="playthrough_33_4">Bentan, a priest of Ilmater, in the northwest wishes to convert your group and will continue to try for a long time before he gives up.</li>
+                    <li data-id="playthrough_33_5">Mulun, in the northeast, claims to be the best swordsman on the sword coast. If you challenge Melun you will get great bracers (if you win that is. Bracers that lower your Thac0 and give extra damage. From: Jan "Simba" Meijer</li>
+                    <li data-id="playthrough_33_6">Carsa, in the ruins just west of the bridge center in the area under the bridge has a jar she found in the ruins which she claims drove her and her party mad. She would not give up the jar and we just went away. If you demand she gives you a jar a very powerful Ogre Mage appears, who you can kill for points.</li>
+                </ul>
+
+                <a name="North of the Gnoll Fortress"></a>
+                <h3><a href="#North of the Gnoll Fortress">North of the Gnoll Fortress</a>  (map 4600) <span id="playthrough_totals_34"></span></h3>
+                <ul>
+                    <li data-id="playthrough_34_1">The map area north of the gnoll fortress, south of the map with Brage and two maps west of Nashkell is where this is.</li>
+                    <li data-id="playthrough_34_2">You get into the area by going west from the map just west of Naskell, map 4700. You cannot go north from the gnoll fortress or south from the map with Brage to get into this map area.</li>
+                    <li data-id="playthrough_34_3">Jared, found in the southeast of the map area, asks the group to go across a bridge and kill a polar bear. Killing the bear gives 900 experience points. Returning to Jared will give you boots of the north, 30 gp or Jared will run away depending upon how good your charisma is.</li>
+                    <li data-id="playthrough_34_4">Laurel, in the north west of the map area, will ask your help in fighting a group of gibberlings. If you agree the gibberlings will appear. You will be thanked and get 250 experience points.</li>
+                    <li data-id="playthrough_34_5">Neville, found in the middle of the map - east of the river, and his Hobgoblin henchmen will be found. Kill and loot for a Long Sword +1.</li>
+                </ul>
+
+                <a name="Xvart Village"></a>
+                <h3><a href="#Xvart Village">Xvart Village 2 hours west of Naskell and Just north east of the Gnoll Fortress</a>  (map 4700) <span id="playthrough_totals_35"></span></h3>
+                <ul>
+                    <li data-id="playthrough_35_1">Just west of Beregost I ran into a village of Xvarts. I must of killed 40 of the little buggers and finally killed Nexlit, I guess the leader and Ursa the bear. Just before Nexlit went down he said why are you killing us, we haven't harmed you. That made me think that maybe I blew a side quest I haven't gotten yet. Xvarts are evil and you can massacre them, if you want to. Good experience. You make enemies of the xvarts who will ambush your group when you move from one location to another. There is an Xvart cave in the far north east of this region with a cave bear and some magic items, including a mace +1. If you kill Nexlit quickly enough, he does not have time to summon the bear and you miss out on 650 experience points, bummer.</li>
+                    <li data-id="playthrough_35_2">Borda found in the north west is selling a potion of extra healing, scroll of protection from magic or a scroll of protection from putrefaction.</li>
+                </ul>
+
+                <a name="The Tombs"></a>
+                <h3><a href="#The Tombs">The Tombs</a>  (map 5000) <span id="playthrough_totals_36"></span></h3>
+                <ul>
+                    <li data-id="playthrough_36_1">This is to the east of the Nashkell Iron Mines and is where you emerge with from level four of the mines. The entrance to the Nashkell mines is in the north-central area of the map. You cannot get back into the mines from here due to a "cave in." You can however go back into the mines and exit to this map area from the fourth floor of the mines. There are also wild dogs roaming here in packs.</li>
+                    <li data-id="playthrough_36_2">Lamalha, Maneira, Telka, and Zeela: In the north central area you will find four magic casting fighters who are more hired assassins. They will talk then attack. They have some really nice stuff.</li>
+                    <li data-id="playthrough_36_3">A man named Hentold will approach you with a special dagger +2 that he took from a crypt in the south-central portion of this map section. The man makes you promise to return the dagger. Within the crypt, a ghoul or Revenant will ask you to return the dagger. As soon as you do so the ghoul dies. You recieve experience for returning the dagger.</li>
+                    <li data-id="playthrough_36_4">The crypt in the south-east portion of this map section has a tough fight with three ghouls. Inside the crypt you will find chain +1, a potion, arrows, and a wand of monster summoning.</li>
+                    <li data-id="playthrough_36_5">In the center of the map is a mage with mustard jellies. If you agree to help him with his experiment, he will fight the jellies with you. If you do not help him, he will fight you with the jellies. The jellies throw poison gas and slow spells. They are not harmed by ordinary weapons, you will need magic weapons here.</li>
+                    <li data-id="playthrough_36_6">There are three Crypts here. The last crypt is in the west.</li>
+                </ul>
+
+                <a name="Gnoll Fortress"></a>
+                <h3><a href="#Gnoll Fortress">Gnoll Fortress</a>  (map 5100) <span id="playthrough_totals_37"></span></h3>
+                <ul>
+                    <li data-id="playthrough_37_1">Do not go to the fortress without having an open slot. Any NPC dismissed within the Gnoll Fortress will be lost forever. If you have the cleric, return to Naskell Inn and dismiss her there. She will wait for you to return.</li>
+                    <li data-id="playthrough_37_2">The map area to the east of the Gnoll Fortress area has Gnolls and the white wolf that the Naskell shopkeeper spoke to you of. Be sure to return the pelt to Naskell Store for a good reward.</li>
+                    <li data-id="playthrough_37_3">Across a rope bridge guarded by two giants, Gnarl and Hairtooth, who I killed easily, I found the Gnoll Fortress. Gnarl and Hairtooth will attack you unless you pay them 10 gold to get across. You need to bargain them down to the 10 gold price. On the other hand they give you experience points and gauntlets of weapon skill for killing them.</li>
+                    <li data-id="playthrough_37_4">The Gnoll Fortress is a death trap. If you have the hamster paladin he will ambush and turn on you if you leave this map area. You can only rest on the other side of the bridge where you entered the area, otherwise Gnolls jump you and you get no rest. This is one big fight from beginning to end.</li>
+                    <li data-id="playthrough_37_5">There is no door to the inside of the Gnoll fortress. The rangers friend, she is in one of the pits. You have to walk down the pit side to get in there. She will be in one of the big one's later on. The mage is found in the pit up the stairs as you enter the fortress and to the east (right). The mage is in the easternmost pit in the fortress. The stairs into the pit are round poles. The mage is a good person - lawfull good. She is the friend of the ranger that has the hamster pet named Boo from Nashkell.</li>
+                    <li data-id="playthrough_37_6">South of the fortress in the cliffs are three caves that contain magic items, jewels and Xvarts. Explore and retrieve them all. The cave in the west, very close to the fortress to the north contains a Tome of Charisma that increases your charisma permanently by 1 point.</li>
+                </ul>
+                
+                <a name="Pine Forest East of Gnoll Fortress, 1 day south of the Xvart Villiage"></a>
+                <h3><a href="#Pine Forest East of Gnoll Fortress, 1 day south of the Xvart Villiage">Pine Forest East of Gnoll Fortress, 1 day south of the Xvart Villiage</a><span id="playthrough_totals_38"></span></h3>
+                <ul>
+                    <li data-id="playthrough_38_1">You can rest in the north west corner of the map area.</li>
+                    <li data-id="playthrough_38_2">Drienne in the south central portion of the map near the waterfall has lost her cat. You will find the cat at the bottom of the waterfall. Returning the cat will get a protection from undead scroll and 200 experience points. Again her reaction depends upon the party charisma. If low, she may give you only money, or even lower, she may walk away.</li>
+                    <li data-id="playthrough_38_3">There is a wolf cave to the southeast of the lake at the top of the waterfall that contains a chest with 238 gold, tiger cowrie shell necklace, and a halberd +1.</li>
+                    <li data-id="playthrough_38_4">In the central east area there is the Dryad of the Cloudpeaks who seeks your assistance in stoppintg two idiots from choping down her ancient oak tree for treasure. Krumm and Caldo will attack you when you do not agree to help them chop down the tree. Talk to the Dryad for 500 experience points and a potion.</li>
+                    <li data-id="playthrough_38_5">You will find some Gnolls here, but one gnoll, Ludrig, will challenge you to single combat. The rest of his band will disperse if you win and you gin 100 gold.</li>
+                    <li data-id="playthrough_38_6">Another group of gnolls want 50 gold for trespassing in their area. You can kill them for 200 gold.</li>
+                </ul>
+
+                <a name="Darryl, Darryl and Larry area, 12 hours South of Nashkell"></a>
+                <h3><a href="#Darryl, Darryl and Larry area, 12 hours South of Nashkell">Darryl, Darryl and Larry area, 12 hours South of Nashkell</a>  (map 5300) <span id="playthrough_totals_39"></span></h3>
+                <ul>
+                    <li data-id="playthrough_39_1">Upon first entering this level try to go toward the north-west and find Albert, a child looking for his doggie Rufie. Albert will give you Rufie's chew toy so he will know you are a friend. Otherwise you may kill Rufie. Return to the boy with the dog and observe the odd behavior and collect your 1000 experience points. Rufie is really a demon wolf and Albert is really a Demon. If you bring Rufie to Albert, Albert will transform into a Demon and open a portal and vanish with Rufie. Albert will promise to give you another of Ruffie's chew toys in addition to the experience points but he may only do so if you are of evil alignment.</li>
+                    <li data-id="playthrough_39_2">In the south center of this area you will find three peaceful monsters, Darryl the Xvart, Larry the Kobald and Darryl the ?. The three brothers will talk to you. Larry is the talkative one. Ask for their autograph. You can sell the autograph or use it as a quest item.</li>
+                    <li data-id="playthrough_39_3">Near the center of the level you will find Sendai, Delgod and Alexander who will insult you repeatedly trying to get you to fight.</li>
+                    <li data-id="playthrough_39_4">Somewhere in the southwest of the level you will find Vax and Zal who claim to be "the fastest dart thrower in the west." They are bandits and will demand your money. The dart thrower is good but archers and slings will bring him down quickly. Take the Bracers of Achery and other items.</li>
+                </ul>
+
+                <a name="East Giberling Camp"></a>
+                <h3><a href="#East Giberling Camp">East Giberling Camp</a>  (map 5500) <span id="playthrough_totals_40"></span></h3>
+                <ul>
+                    <li data-id="playthrough_40_1">In the cenral west part of the map, a Flaming Fist Mercinary offers you a 50 gold reward for the capture of Samuel, a deserter from the Flaming Fist.</li>
+                    <li data-id="playthrough_40_2">In the cenral east part of the map, Lena will ask you to take Samuel to the Temple of Wisdom at the Friendly Arm Inn. Gellana Mirrorshade is the cleric in this temple and will be very appreciative of Samuel's return. Gellana and her husband own the Friendly Arm Inn and have been good friends to you and your group so agree. Lena will give you a jade ring and Samuel will become one of the items in your pack. You have 10 days to return him, so hurry to the Friendly Arm immediately. Gellana will give you a potion of heroism and extra healing if you arrive in time. You get 500 experience points.</li>
+                </ul>
+
+                <a name="Tenya's House"></a>
+                <h3><a href="#Tenya's House">Tenya's House</a>  (map 0400) <span id="playthrough_totals_41"></span></h3>
+                <ul>
+                    <li data-id="playthrough_41_1">This map area is north of Baldur's Gate bridge, map 0900.</li>
+                    <li data-id="playthrough_41_2">Tenya is found at the end of the road in front of her house. Keep talking to her until she agrees to discuss the matter. It should take three times. She will tell you that the fishermen are evil and liars. She will also tell you about the bowl of water elemental control that they are using to disrupt the sea and blame her. You can now return to the evil fishermen and force them to give up the bowl for 2500 experience points. When first approached Tenya will tell the group that it is none of our business about the fishermen.</li>
+                    <li data-id="playthrough_41_3">If you tell tenya the witch that you just want to know what is going on, she will attack you. However if you just hit her back weakly, she will ask you why you are doing this and go through a story about how the fishermen stole her mother's bowl. If you get it back for her you get more experience points. Also, if you have gotten the bowl back for her and not killed her, when you go to the temple in Baldur's Gate and talk to the priestess of Umberlee, if you ask to talk to Tenya she will give you the body of Tremain's son without having to pay any gold. From: dUSTY Firm-Tammy</li>
+                </ul>
+
+                <a name="Baldur's Gate Bridge"></a>
+                <h3><a href="#Baldur's Gate Bridge">Baldur's Gate Bridge</a>  (map 0900) <span id="playthrough_totals_42"></span></h3>
+                <ul>
+                    <li data-id="playthrough_42_1">The bridge is two maps north of the Friendly Arm Inn.</li>
+                    <li data-id="playthrough_42_2">Tenya, is in the north east on the other side of the bridge from the city. She is apparently the druid who was involved with the fishermen in the map area just north of the Friendly Arm Inn and just south of the bridge. She told me to mind my own business when I asked her what was going on.</li>
+                    <li data-id="playthrough_42_3">Quayle, gnome, chaotic neutral, male cleric (6), illusionist (5), found northwest of the bridge area but not inside the gate. Quayle, an egocentric cleric illusionist, is found on the other side of the Baldur's Gate bridge, so be sure to have an open spot.</li>
+                    <li data-id="playthrough_42_4">Scar introduces himself as you cross the bridge. He contracts with you to investigate the Seven Suns trading center. Scar tells you that Jhasso is the head of the center, who is acting strangely. If you tell Scar about the Iron Throne, he will ask you to shadow Jasso with stealth and report back to the Flaming Fist. The Seven Suns is found in the southwestern portion of Baldurs Gate. The Flaming Fist Keep or Barracks is also found in this area just to the west of the Seven Suns. Be careful as the merchant trading center is in a building which is very similar to the Seven Suns. The merchant trading center is locked and the lock cannot be picked.</li>
+                </ul>
+
+                <a name="Baldur's Gate Side Quests"></a>
+                <h3><a href="#Baldur's Gate Side Quests">Baldur's Gate Side Quests</a><span id="playthrough_totals_43"></span></h3>
+                <ul>
+                    <li data-id="playthrough_43_1">The area of Baldur's Gate is divided into 10 different areas: northwest, north central, north east, central west, central, central east, south west, south central, south east, and the bridge areas. The central west, central and north east areas are a menace to navigation in that they have an area which is inside the inner wall and an area outside the inner wall. If you want to get to the central area outside the inner wall, you must walk to the west from the central area outside the wall or from the south west area north. Going to the west central area you must come from either the north west area or the central area north of the wall. If you want to get to the northeast area inside the wall, just walk north from the east central location. The inside of the wall north east area is only accessable from the north central area.</li>
+                    <li data-id="playthrough_43_2">Quinn is looking for his brother Nestor, who he believes was killed by Ankhegs. If you find his brother's dagger and return it to him. Quinn will give you a Shandon gem. Nestor appeared on the Ankheg Farm map north of Friendly Arm Inn, map 1400.</li>
+                </ul>
+
+                <a name="Baldur's Gate Northwest"></a>
+                <h3><a href="#Baldur's Gate Northwest">Baldur's Gate Northwest</a>  (map 0100) <span id="playthrough_totals_44"></span></h3>
+                <ul>
+                    <li data-id="playthrough_44_1">Pheirkas asks you to steal Algernon's cloak from him in Bereghost. Returning with the cloak gets you a reward.</li>
+                    <li data-id="playthrough_44_2">Eldoth and Skie subquest: If you have Eldoth in your party when you first enter 0100, Eldoth will take you to a location near the Entar Silvershield Estate. You will now have one day to find Skie or Eldoth will leave the party. Skie is found on the second level of the Estate, map 0102. If the party finds Skie, who is a prisoner in her own home, with Eldoth in the party, she will join the party. If Eldoth is not with the party Skie will scream and you will be forced to fight. See Elkart below for more on this subplot.</li>
+                    <li data-id="playthrough_44_3">Gervisse, Laerta, Louise and Voltine subquest: Within an estate in the northwest on map 0162, you will find Gervisse, a bogeyman, who will tell you that the druid Voltine has evil designs on the twin sisters Laerta and Louise. Laerta and Louise, the twins, tell the party that they are afraid because someone has been watching them. Voltine will appear and tell the party that Gervisse is evil and must be killed. If the players kill Gervisse, Voltine gives them a wand of polymorphing and Laerta gives them a scroll of protection from evil.</li>
+                    <li data-id="playthrough_44_4">Husam, a harper thief can be found here at the Thieves' Guild building, map 0100. Speak with him here and you can meet with him in the central east area of the city in Chapter 7 to start the Harpers subplot. See more on Husam in the cenral east area section below.</li>
+                    <li data-id="playthrough_44_5">Helm and Cloak Inn first floor by the bartender, map 0116, Gorpel Hind, Farluck the Fearless, Turpin the Roaring Ranger, and Nelik the thief are an adventuring band who will talk to the adventurers and offer them to join him for a drink. Shortly after you sit down to tell lies together Gretek and the Maulers of the Undermountain, another adventuring group, arrives, interrupts your drinking and lying and insults the party. A battle insues. Gorpel Hind and his group join yours against Gretek and his group. Try to keep the Gorpel Hind group alive.</li>
+                    <li data-id="playthrough_44_6">Degrodel, in a house in the northwest section of Baldurs Gate with doom guards, invisable stalker and helmed horror gives you the quest to free a group of stoned adventurers in the house of Felonius Gist. The petrified band of adventuers are in the cental part of the city in a Felonius Gist's Manor house directly west of the fairgound tent,</li>
+                </ul>
+
+                <a name="Baldur's Gate North-central"></a>
+                <h3><a href="#Baldur's Gate North-central">Baldur's Gate North-central</a>  (map 0200) <span id="playthrough_totals_45"></span></h3>
+                <ul>                    
+                    <li data-id="playthrough_45_1">North central Baldurs Gate has the Duckal Palace in the center, Ramazith's Tower in the northwest, Petrine in the southwest, and the 3 Old Kegs Inn just to the east of the Duckal Palace.</li>
+                    <li data-id="playthrough_45_2">On the right side of the palace, Oberon's Estate is the brown stone building. Look at the map you got with the game. it's on there too.</li>
+                    <li data-id="playthrough_45_3">Rinnie is found in the first floor room of a building in map area 0200. This is map 0006 where he is found. Rinnie wants a copy of the History of the Unicorn Run, he will pay gold and 900 experience points.</li>
+                    <li data-id="playthrough_45_4">Ghorak from the south central area, map 1200, asked the party to travel to the Three Old Kegs and find his brother's skull behnd a painting and to give it to Agnesia at the Lady's Hall in the northwest. Agnesia will give the party 1000 experience points for the skull of Ghorak's brother obtained behind the painting in the Three Old Kegs.</li>
+                    <li data-id="playthrough_45_5">Ramazith, Radefast and Abela the Nymph subplot: Upon entering the north central area, you will see Ramazith standing in front of his tower. Ramazith will tell you he has been watching your party. Ramazith (north central) wants you to go to Ragefast's home and free the nymph that he has tied up there and return the nymph to him. You can break into his tower and go up to the top, if you are willing to fight through ghouls, mustard jellies, hobgoblin elite, and kobald commandos. The tower is five levels high with Ramazith's private study on the top floor. You must pick the lock to get into the tower. Ramazith will meet you on the first floor of his tower if you enter with or without the nymph, map 0216. If Ramazith fights you because you arrive without the nymph (he says you have betrayed him), or ask him to free the nymph, he will teleport to the top level of his tower. There is a tome of Clear Thought (permanent increase to intelligence) on the top floor of the tower. If you return to the tower with the nymph, the nyph will appear and talk to Ramazith. Ramazith will give the party bracers of defense. If the party asks Ramazith to free Abela, he will attack the party. See Radefast below in the west central section for more information. Ramizith has a ring of protection +2 on him.</li>
+                    <li data-id="playthrough_45_6">Petrine (north central), a runaway child, found in the street in the southwest part of this area, wants her cat's ring from Uncle Bheren.</li>
+                    <li data-id="playthrough_45_7">3 Old Kegs (north central) just east of ducal palace, has Nantrin Bellowglyn as bartender renting DMNR rooms and drinks. Bellamy, an adventurer is on the first floor. Ithtyl is on the second floor. There are books on the third floor. You will find the noblewoman here.</li>
+                    <li data-id="playthrough_45_8">Three Old Kegs, just east of the Ducal Palace: Bellamy will warn your party about Phandalyn if it has evil members in it. Phandalyn also at the Inn will attack the party if there are evil members in it.</li>
+                    <li data-id="playthrough_45_9">Noblewoman named Areana is being blackmailed by Cyrdemac. I believe that the noblewoman is found in or around the three old kegs inn. If you kill Cyrdemac, who is found in the Elfsong Tavern, she will pay you 500 to 4000 gold. You can decline to kill Cyrdemac and blackmail her yourself for 500 gold every 2 days. If you do not demand money within 10 days she will attack you with Tor Lobo.</li>
+                </ul>
+
+                <a name="Baldur's Gate Northeast"></a>
+                <h3><a href="#Baldur's Gate Northeast">Baldur's Gate Northeast</a>  (map 0300) <span id="playthrough_totals_46"></span></h3>
+                <ul>                    
+                    <li data-id="playthrough_46_1">Brielbara will ask you to obtain an antidote for her daughter. You will have to steal the antidote from Yago who is on the third level of the Low Lantern boat in the south central area, map 1200. Yago will fight when approached by the group and when they beat him, he will give them the book that they need. The group should return the book to th Splurging Sturgeon in the northeast, map 0300. The party will receive 1000 experience and 200 gold.</li>
+                    <li data-id="playthrough_46_2">Northeast map area, outside the wall, Marek and Lothander approach and threaten you. This starts the Marek and Lothander poisoning subquest. In order to complete this subquest, you must go to the wide in the central area and to the second floor of the Blushing Mermaid Inn in the northeast area inside the inner city wall.</li>
+                    <li data-id="playthrough_46_3">There are several buildings here including a general store. Ilmaters shrine is in the Northeast of this map. Splurging Sturgeon is in the south of this map area. Northeast map area, inside the inner wall has the blushing mermaid Inn in the center, the temple of Ilmater in the northeast, and the Splurging Sturgeon in the south.</li>
+                    <li data-id="playthrough_46_4">The Blushing Mermaid Inn (north east): Larze approaches you when you enter claiming he is an assassin who must kill you. Simply tell the stupid ogre that he is wrong and have him go check the picture, and he will go away and you get 400 experience points. If you kill the ogre, you will find gauntlets that increase THACO and weapons damage on him. Bork is the proprietor who sells P, M, N but no royal rooms and booze only. On the second floor is gambling. Marek can be found here on the west side of the room. Kill him to get your antidote.</li>
+                    <li data-id="playthrough_46_5">Marek on the second floor of the Blushing Mermaid Inn, map 0115, has the "other half" of the poison antidote that the party needs to cure themselves of the poison food that Marek gave them. Talking to Marek will start a fight which will give the party the antidote and 10000 experience points. Don't forget to loot Marek's body for good stuff.</li>
+                    <li data-id="playthrough_46_6">Splurging Sturgeon (north east) Tavern has a Mr. Shade on the second floor who wants to know if you have them. On the first floor, Lantanara speaks of dreams of you.</li>
+                    <li data-id="playthrough_46_7">Lusselyn in the Splurging Sturgeon, map 0103, will talk to the players. Talk to him three times and he will bet you cannot kill a slime. There is a mustard jelly in a room to the nw of second floor. Return to Lusselyn after killing the jelly for gold.</li>
+                    <li data-id="playthrough_46_8">Chapter 7: Meet Husam, the harper, at the Blushing Mermaid</li>
+                </ul>
+
+                <a name="Baldur's Gate West-central"></a>
+                <h3><a href="#Baldur's Gate West-central">Baldur's Gate West-central</a>  (map 0600) <span id="playthrough_totals_47"></span></h3>
+                <ul>                    
+                    <li data-id="playthrough_47_1">Go to the north of the Hall of Wonders (north of the big white buildings) and find the child, Varci, with a problem. Varci takes you to his house to meet with his father Tremain, a priest of Tymora. Tremain wants his dead son Casson's body, which is in the Umberlee temple. The temple is in the dock area. If you talk to the Priestess in charge you can buy the body back for 2000 gold and return it to the priest. Another alternative is to kill everyone in the temple of Umberlee and you still get the body. Varci pays the group 2000 gold and 5000 experience for returning the child.</li>
+                    <li data-id="playthrough_47_2">Inside the hall of wonders, map 0130, Be'land will request the entrance fee. Brathlen, the Hall of Wonders guide, will show you through the hall on a tour. Brathlen can answer questions for the party about the Hall after the tour. If you go inside the Hall of Wonders, map 0130, at night, you will meet Alora, a thief. Alora will ask you to help her rob the building. She will move to another location and if you approach her again and talk with her, she will ask to join the party.</li>
+                    <li data-id="playthrough_47_3">Agnesia in the Temple of Tymora, The Lady's House, will give the party 1000 experience points for the skull of Ghorak's brother obtained behind the painting in the Three Old Kegs.</li>
+                    <li data-id="playthrough_47_4">Abela the Nymph is found within Ragefast's Home on map 0126 within the northwest area, map 0100. This is another subplot that involves Ramazith who is from the north central region of the city and Ragefast. Ragefast has captured a Nymph. Ramazith will hire the party to steal the Nymph for him. When walking from the central region to the central west region a noblewoman will approach the group and tell them of the Nymph and ask them to free her. You can try to talk Ragefast into freeing the nymph. If you mention Ramazith, Ragefast will attack you. If you kill Ragefast you can free the nymph. If you free the nymph, you get a lock of her hair. If you take the nymph to Ramazith she will become an item in your pack until you get to him. See Ramazith above in the north central section for more information. If you take the lock of nymph hair to Sorcerous Sundries they will make it into a Nymph coat which increases charasma by +2 and allows you to cast charm.</li>
+                    <li data-id="playthrough_47_5">Fenten wants ankheg shells and will pay for them. You get 200 experience points for bringing him the shells.</li>
+                </ul>
+
+                <a name="Baldur's Gate Central-central"></a>
+                <h3><a href="#Baldur's Gate Central-central">Baldur's Gate Central-central</a>  (map 0700) <span id="playthrough_totals_48"></h3>
+                <ul>                                    
+                    <li data-id="playthrough_48_1">Center Baldurs Gate has "the wide" which is an open market, carnival type area. Lothandar will approach you in this area to inform you that Marek has poisoned you and that he will give you the antidote if you can get him a geas scroll from the hight priestess of umberlee to remove the geas forcing him to work for the Iron Throne. You need to consult the seer within a large tent in the north part of the wide to find out how to release the geas. Lothander will lead you to the Seer's tent, map 0726. You should save the game here, because the Seer will only answer one question a day. The party must ask the right question to get the correct answer. The Seer will finally tell the group that they must go to see Jalantha Mistmyr, the High Priestess of Umberlee, within the Water Queen's house, map 0609, in the south central area, to get a scroll to release the geas. Jalantha wants a book of power from the Lady's Hall in the west central area, map 0132. In the Lady's Hall the priest there will give you the book if you tell them you need the book or you will die. See Umberlee below in south central and Lady's Hall in north central areas for more information. Lothandar goes to wait in the Blade and Stars for the scroll while you try to get it. Giving the scroll to Lothander will result in him giving you "his half" of the antidote. He directs the party to go see Marek at the Blushing Mermaid for the other half of the antidote. See Blade and Stars and the Marek Lothander Poisoning subquest below for more information.</li>
+                    <li data-id="playthrough_48_2">Nadine's son Euric is missing and she wants the party to find him and give him an amulet of protection +1. She will pay 300 experience points and an amulet of missiles for the task. Euric is found on the first floor in a building in the southeast map area, map 1300. Euric gives the party 1100 experience points if they give him the amulet of protection +1 from his mother Nadine who is in the central-central map area, map 0700.</li>
+                    <li data-id="playthrough_48_3">Nieman, Oulam, Wheber, and William, are Zhentarim agents who will attack the party if they do not have Xzar or Montaron as members of the group.</li>
+                    <li data-id="playthrough_48_4">Vail, a stoned adventurer within the house of Felonius Gist (his Manor) gives you a quest to locate the helm and cloak of Balduran. The petrified band of adventuers are in the cental part of the city in a house directly west of the fairgound tent. The name of the Wizard that gave me the Quest, is Degrodel, he is in the house in the NW section of the town of Baldur. The house has Doom gaurds, Invisble stalker and a Helmed Horror. The petrified band of adventuers are in the cental part of the city in a house directly west of the fairgound tent, Felonius Gist's Manor house. The stone statue in the far left corner is Vail he gives you a riddle to where the helm and cloak are, sound familiar? The helm is behind a picture there on the second floor back stairs. The cloak is in the undercellar with one of the girls.</li>
+                </ul>
+
+                <a name="Baldur's Gate East-central"></a>
+                <h3><a href="#Baldur's Gate East-central">Baldur's Gate East-central</a>  (map 0800) <span id="playthrough_totals_49"></h3>
+                <ul>                                    
+                    <li data-id="playthrough_49_1">You enter this area first from the Baldur's Gate bridge area. Central East Baldurs Gate when first entered has a nice video. Talk with Elminster who is near the entrance to this area from the bridge. The thieves guild is directly west of the entrance to the bridge. Sorcerers Sunday is the colorful mage shop in the middle of this area. General Store in SW part of area. Elfsong Tavern in middle of area can give rooms and ale from bartender and has royal rooms. Lucky Aello's Discount store is in the north east of area.</li>
+                    <li data-id="playthrough_49_2">I ran into Mick Feeley who said "speedy delivery." This was a tribute to Mr. Rogers television show.</li>
+                    <li data-id="playthrough_49_3">Elminster will put in another appearance at Baldur's Gate just inside the gate and on map 0800.</li>
+                    <li data-id="playthrough_49_4">Nemphre, found in a first floor room, map 0823, within the east-central area, map 0800, will ask you to get a bloodstone amulet from Arkion. Returning with the amulet gives the group a 1000 experience point and scroll of vampiric touch. See Ordulinian, below, for more information on this quest.</li>
+                    <li data-id="playthrough_49_5">Delthyr, a harper, will provide you with rumors and will meet you later within the Three Old Kegs Tavern, map 0119. The Three Old Kegs is found in the north central region, map 0200.</li>
+                    <li data-id="playthrough_49_6">Niklos on map 0800 will approach the group and ask them to see the thief guildmaster in the thieves guild. If they agree, Nicklos will give them the password, which is "Fafhrd." The thieve's guild password is "Fafhrd." The thieves can be helpful here if you befriend them. Upon entering the Thieves Guild, a thief will approach and ask the password.</li>
+                    <li data-id="playthrough_49_7">Thieves guild (east central) has several characters. Don't talk to them unless you intend to go a thieving.</li>
+                    <li data-id="playthrough_49_8">Thieves guild level one: Narlen Darkwalk Rededge is an NPC who offers to go stealing with you. Save your gaem and remove all weapons from the hands of your thief before meeting with Narlen. Narlen will meet with the thief only between 8 PM and 4 AM at the Splurging Sturgeon. If any other party member is seen, Narlen will not meet with the thief in the party. Narlen wants you to serve as the lookout for his thieving inside the home of DeMallonblades. Narlen will lead the thief to the correct place to watch for him. Five seconds after being placed on guard, a watchman will approach the group. You should shout an alarm to Narlen when the watchman approaches. Later you should go back to the thieves guild and meet Narlin for your split. If you killed the watchman, the subplot is over. If you did not warn Narlen he will attack you. If you yelled a warning and did not kill the watchman, Narlen will offer you a partnership in a second job at the Blade and Stars Inn and 100 gold. Narlen will ask the thief to enter a building and retrieve the Rogue Stone. Returning the stone to Narlen at the thieves guild getst then 4000 experience and three peals.</li>
+                    <li data-id="playthrough_49_9">Thieves guild: Resar, a Halruuan wizard, is in the NW of the guild with Altos. He may attack the party when they start talking with Alatos the second time. If the party has successfully completed the two quests with Narlen, Narlen will arrive and kill Resar, and start talking with Alatos. This conversation will result in the party being accepted into the guild. If the party kills Resar before completing the quest, they still can complete it. If they have completed the quest and kill Resar they are admitted into the guild.</li>
+                    <li data-id="playthrough_49_10">Thieves guild: There is a Tome of Dexterity in a barrel next to Black Lilly.</li>
+                    <li data-id="playthrough_49_11">Do not talk to Alatos until you have completed Narlen's quest above. Thieves guild in the northwest part of the guild: Alatos "Ravenscar" Thuibuld, the guildmaster of the thieves, wants you to steal the balloon parts from a member of the nobililty, and return them to him in 10 days. Three sisters have the balloon parts: Delorna, Helshara, and Ithmeera. The sisters are found at Oberon's Estate, just southeast of the Ducal Palace in the north central area. Save the game and enter the building. Claim to work at the estate in your dialogue with Glanmarie on level one, map 0143, and gain 2000 experience points. If you make a mistake or are ordered to leave within 10 seconds Flaming Fist mercinaries will attack. On level three of the Oberon's estate, the sisters Helshara and Ithmeera will talk then attack the party. If the party kills Helshara, Ithmeera will surrender and give up their items: the fragment, Statuette and Spellbook. Return with these items to Alatos on the first floor of the thieves guild who will have Resar attack the group. See Resar above for more information.</li>
+                    <li data-id="playthrough_49_12">Sorcerous Sundays has a very complete range of spell scrolls and magic items sold by Halbazzer Drin. Ordulinian on the first level speaks of how foolish Arkion and Nemphre are for fighting over magic items. On the second floor, William Garst, Wheber Ott, niemain and Orulam are casting spells you interrupt them. In the mage guild/store you can fight a group of wizards upstairs after they turn red. Be rude and they attack you giving you 1500 experience points and some nice stuff, such as a ring of wizardry.</li>
+                    <li data-id="playthrough_49_13">Ordulinian, found on the first floor of Sorcerious Sundays will ask you to get the bloodstone amulet and onyx ring from Arkion and Nemphere. Returning to Ordulinian with these items gains that party 3500 experience points.</li>
+                    <li data-id="playthrough_49_14">Elfsong Tavern (east central) has a merchant on the second floor who identifies, buys and sells items. Has royal rooms. Alyth, the owner of the tavern, will allow you to buy and sell items if you talk to her twice. Cyrdemac is a merchant on the southwest part of the second floor of the Elfsong Tavern, map 0706. Cyrdemac offers items to buy, sell and identify. He sells nice magic stuff: necklace of missles, shield +1, and spells. The noblewoman from level three of the flaming keg, map 0121, may hire you to kill him. Be sure to buy and sell everything you want to him before killing him.</li>
+                    <li data-id="playthrough_49_15">Elfsong Tavern level two, map 0706: Brevlik hires the group to steal a telescope from the Hall of Wonders found in the central west area, map 0600, see above. They should remove all weapons from hands before entering the hall. If they kill a guard Brevlik will no longer deal with them. If they get the telescope without killing a guard, Brevlik will award them 5500 experience and a wand of lightning.</li>
+                    <li data-id="playthrough_49_16">Lucky Aello's Discount Store (east central) sells cursed items. You can steal here without the guards being called. Steal and sell back to proprietor who will continue to talk and deal with you after catching you steal. You should get a chuckle out of this guy.</li>
+                    <li data-id="playthrough_49_17">Chapter 7: Husam, the harper, can be found at 0800. Husam will tell the parties some rumors. Talk to him here first then meet him at the blushing mermaid, where he will ask them to follow him.</li>
+                    <li data-id="playthrough_49_18">Chaper 7: Tamoko, one of Gorion's murderers, will show up near Sorcerious Sundays and tries to get them to investigate Eltan.</li>
+                </ul>
+
+                <a name="Baldur's Gate South-west"></a>
+                <h3><a href="#Baldur's Gate South-west">Baldur's Gate South-west</a>  (map 1100) <span id="playthrough_totals_50"></span></h3>
+                <ul>                                    
+                    <li data-id="playthrough_50_1">There is a general store in a red building just north of the Seven Suns.</li>
+                    <li data-id="playthrough_50_2">The Scar Bug can be 1 of 2 places. He is either inside the Flaming Fists building on the first floor, map 0607, or on the outside of the building wandering around. If you cannot find him, he may have been eaten by dopplegangers. The first time you meet Scar is on the Baldor's Gate bridge. If you refused to investigate the Seven Suns on the Baldur's Gate bridge Scar will ask you again to complete the task here.</li>
+                    <li data-id="playthrough_50_3">When you meet Scar on the bridge, Scar tells you to go to the Seven Sun and investigate it. I suggest that you do this first. Scar says the head of the Seven Suns, Jasso, has been acting strangely lately. The Seven Sun is loaded with doplegangers. Seven Sun is found in the southwest part of Baldur's Gate. Within the Seven Suns you will find a merchant who says his fellow merchants are acting strangely so he is leaving and never coming back. The other merchants are really doplegangers. If you talk to them three times they will turn into their true form and attack. Clean out all of the floors including the basement where you will find Jasso. Jasso is the second in command of the Seven Sun and he has been locked up here while a doppleganger took his place. Do not report back to Scar until you complete this quest. Scar will give you 5000 experience points and 2000 gold.</li>
+                    <li data-id="playthrough_50_4">Scar will then give you a second quest to investigate the disappearance of people from the streets. This can be traced to an ogre mage in the sewer easternmost area map on the west central part of the map. Kill the ogre mage and return to Scar for 2000 experience and 1000 gold.</li>
+                    <li data-id="playthrough_50_5">Scar will recommend that you meet with Eltan the commander of the Flaming Fist. Eltan is on the second floor of the Flaming Fist Gaol, map 0608. Eltan will give the group the task to investigate the Iron Throne in the south central area of Baldur's Gate, map 1200. Completing this task ends Chapter 5 and teleports the group to Candlekeep. DO NOT go to the Iron Throne until you have completed as many side quests as you want, since you will not be able to complete them after chapter 5 is over. If you return to Eltan with information that Rieltar and the Iron Throne leaders are in Candlekeep, or a letter from Tulth to Rietar Eltan gives the characters a book or great worth to give to the guard at the Candlekeep gate and the pary is transported to Candlekeep. The group receives 7200 eperience for completing this quest.</li>
+                    <li data-id="playthrough_50_6">In the south-west area of the docks Aldeth Sashenstar, a merchant, will give you a magic sword +3 against shapshifters and 300 gold if you complete a quest for him. Several of his business partners have been acting strangely and he wants to have you investigate them. Aldeth suspects shapeshifters. Aldeth will meet you later on the second level in the merchant league, map 0128. If they have learned anything Aldeth suggests that they talk to Brandilar on the same floor, map 0128, and gives a 300 experience point reward. Brandilar will want the party to get evidence on Zorl and Irlentree who have also been acting strangely. Irlentree and Zorl are found on the first level of the Merchant League, map 0127. These two will invite you to Aldeth's birthday party. Irlentree is a greater doppleganger. Taking a letter from Sarevok to Zorl to Brndilar completes the quest and he will tell you to kill Irlentree and Zorl.</li>
+                    <li data-id="playthrough_50_7">Fergus, a flaming fist mercinary within the Flaming Fist Gaol, map 0607, or Keep wants an angel skin ring for his girlfriend. You gain 1000 experience points and Fergus' help later in the game. If Fergus sees you when you are a criminal in chapter seven, he will not jail you.</li>
+                    <li data-id="playthrough_50_8">An Inn to the east (right) of the Flaming Fist Gaol is full of green jellies and an enormous fight breaks out where many patrons of the Inn are killed.</li>
+                    <li data-id="playthrough_50_9">Chapter 7: Angelo on ground level in the Flaming Fist Gaol, map 0607, will meet briefly with the group before sending them to the prison. If Shar-Teel is a member of the group, Angelo will release them.</li>
+                    <li data-id="playthrough_50_10">Chapter 7: Neb is a prisoner in the cell next to the party in the Flaming Fist Gaol, map 0607. If you answer Neb riddle with 33 children, you will be taken to an area outside of the Flaming Fist Gaol on map 1100.</li>
+                    <li data-id="playthrough_50_11">Chapter 7: Eltan on level two of the Flaming Fist Gaol, mapy 0608, is being poisoned by Rashad, his healer. Talking to Rashad will lead to a battle where the party will kill Rashad. Eltan will go into a pack as an inventory item. Take Eltan to the harbormaster and the harbormaster will take care of him.</li>
+                    <li data-id="playthrough_50_12">Chapter 7: Tamoko will show up here and try to convince the party not to hurt Sarevok. Tamoko is Sarevok's girlfriend. If the party agrees, she will go to the undercellars. If the party refuses she will attack. Tomoko has full plate +1 that you can loot when she dies.</li>
+                </ul>
+
+                <a name="Baldur's Gate South-central"></a>
+                <h3><a href="#Baldur's Gate South-central">Baldur's Gate South-central</a>  (map 1200) <span id="playthrough_totals_51"></span></h3>
+                <ul>                                    
+                    <li data-id="playthrough_51_1">Entillis Fulsom, a harper, will speak with you upon entering this area if you have Khalid and Jaheira in your party. Having these two opens up the harpers subplots.</li>
+                    <li data-id="playthrough_51_2">Kolvar, a Xentarim, will meet with the party upon entering this area if you have Xzar and Montaron in the party. Kolvar will fill in the party on the happenings in Baldurs Gate since Xzar and Montaron have left.</li>
+                    <li data-id="playthrough_51_3">South Central Baldurs Gate has the Water Queens House (temple of umberlee), Harbormaster, the Low Lantern a ship at the dock</li>
+                    <li data-id="playthrough_51_4">The south central area contains "the water queens house" which is the temple of Umberlee in the south west of the area, the Iron Throne in the northwestern area, the harbormaster in the centralwest area, the Low Lantern Ship floating gambling casino in the southeastern area, and several warehouses on the eastern side of this level. These warehouses include the one with the bassilisk, most north of the bunch, the one with Noralee who has lost her gauntlets and others.</li>
+                    <li data-id="playthrough_51_5">The harbormaster will take the body of Duke Eltan and protect it from harm and give you 2500 experience points. The map inside the building is 0702.</li>
+                    <li data-id="playthrough_51_6">Noralee in the central warehouse will ask you to find her lost gauntlets dropped on the dock somewhere. The gauntlets are found in a case on the southwest side of the harbor, just south of the temple of Umberlee.</li>
+                    <li data-id="playthrough_51_7">Ghorak: Within a house on the south-east side of this area you will find an afflicted man named Ghorak. He wants you to find the skull of this brother behind a painting in the Three Old Kegs. Once found he wants you to take the skull to Agnasia in the Lady's Hall. For more information see north central and west central areas above.</li>
+                    <li data-id="playthrough_51_8">Two women on the Low Lantern ship who are talking about entropy and the void have gauntlets of ogre strength. You must pick pocket them.</li>
+                    <li data-id="playthrough_51_9">DO NOT DO THIS UNTIL YOU FINISH ALL Baldur's Gate Subquests THAT YOU WANT TO. Go to the Iron Throne Mansion in the northwest corner of the dock area map. You can kill the guys on the top level of the mansion or search the mansion until you find out that Reitar is in Candlekeep. The Iron Throne Mansion has five levels, maps 0612 to 0616. One level is in the basement accessed by stairs to the right of the door out to the street. The basement goes to the sewers in the northwest of the westernmost section of them through the area that goes directly west (left) from the top intersection of the west sewer section. The other areas go to the top floor. If you go all the way to the top, you will have a big fight. On the first floor, we told the guard we were merchants from Sembia with business with the Iron Throne leaders. On the second floor we told the guard we were delivering a message to Sarevok. On the third floor we told them we were merchants from Sembia. Dustus Gurn, assistant chief accountant, told us that Rieltar and Brunos went to Candlekeep. If you kill the guys on the fourth floor, get the documents describing their plan, the letter from Tulth to Rieltar. You will find Zalamar Cloud Wulfe, Gardush, Naamanj Diyab, Asim and Ala, and Lyle Espejo on the fourth floor. Save the game. Take these documents back to Scar and he will take you to Duke Elton. If you cannot find Scar after looking go directly to the Duke. The chapter ends when you report to Duke Elton. Elton gives you the tome of great value which you will need to get into Candlekeep in chapter 6. You are immediately teleported to Candlekeep so if you had not slots open, the tome is dropped on the ground and you have to retun to Duke Elton's room to get it. Alternatively, you can go directly to Duke Eltan on the second floor of the Flaming Fist garrison and get the task to investigate the Iron Throne, and return to Elton later to report your findings after finding out that Reitar is in Candlekeep.</li>
+                    <li data-id="playthrough_51_10">Cordyr will ask the group, if they have a bad or medium repuation to kill Sil and he sireens. Returning to Cordyr with Sil dead will gain 1000 experience points and a scroll of haste or flame arrow.</li>
+                    <li data-id="playthrough_51_11">Chapter 7: Take Eltan to the harbor master via the sewers and the harbor master will take care of him.</li>
+                </ul>
+
+                <a name="Baldur's Gate South-east"></a>
+                <h3><a href="#Baldur's Gate South-east">Baldur's Gate South-east</a>  (map 1300) <span id="playthrough_totals_52"></h3>
+                <ul>                                    
+                    <li data-id="playthrough_52_1">Baldurs Gate south east has the Blade and Stars Inn.</li>
+                    <li data-id="playthrough_52_2">Nadarin will give you 1300 experience points and 1000 to 1800 gold to kill a bassilisk in a warehouse in the eastern dock area on south central map area, map 1200.</li>
+                    <li data-id="playthrough_52_3">G'axir the Seer, within the Blade and Stars Tavern, map 0105 will provide 1000 experience points if the group will find them a sphene gem.</li>
+                    <li data-id="playthrough_52_4">Euric is found on the first floor in a building in the southeast map area, map 1300. Euric gives the party 1100 experience points if they give him the amulet of protection +1 from his mother Nadine who is in the central-central map area, map 0700.</li>
+                    <li data-id="playthrough_52_5">Blade and Stars Inn (south east) has Rooms and booze. Gaxir the Seer talks about the sphene gem which he wants you to steal and return to him. Shaella is a priestess of the mist shadow, Leira, Lady of the Mists and is an illusionist. Lothandyr is here and has his half of the antidote in exchange for the geas scroll from the high priestess of umberlee. Marek in the Blushing Mermaid has the other half of the antidote.</li>
+                    <li data-id="playthrough_52_6">Eldoth and Skie subquest: Elkart will meet with the party in the Blade and Stars Tavern, map 0105, and give them 1000 gold ransom each day until the eighth day when he will show up with six Flaming Fist mercinaries and attack the party.</li>
+                    <li data-id="playthrough_52_7">Shaella, priestess of Mistshadow, Leira Lady of the Mists, an illusionist within the Blade and Stars Tavern will send you off on a non-existent quest. If you return to talk with her, she will pretend to be someone else.</li>
+                    <li data-id="playthrough_52_8">Reginald Longtooth Worthington III</li>
+                </ul>
+
+                <a name="Baldur's Gate Sewers and Undercellars"></a>
+                <h3><a href="#Baldur's Gate Sewers and Undercellars">Baldur's Gate Sewers and Undercellars</a><span id="playthrough_totals_53"></h3>
+                <ul>                                    
+                    <li data-id="playthrough_53_1">There are three sections to the sewer map: west, central and eastern. The sewer maps and the undercellars all connect to one another and several other landmarks, including the Iron Throne, The Undercellars whore house, and the Blushing Mermaid.</li>
+                    <li data-id="playthrough_53_2">Stairs up from this area give you the manhole covers in the street. The circular travelling icon either takes you to another part of the sewer or to one of the special areas.</li>
+                    <li data-id="playthrough_53_3">From the northern part of the west sewer you can access the Iron Throne directly by going out the west exit and the northeast corner of the undercellars whorehouse from going southwest.</li>
+                    <li data-id="playthrough_53_4">Ratchild, a kobald in the sewers will talk then have his kobald army attack the party.</li>
+                    <li data-id="playthrough_53_5">The southwest exit from the central sewer map takes you to the northwest corner of the undercellars whorehouse.</li>
+                    <li data-id="playthrough_53_6">The central exit from the eastern sewer map takes you to the southwest corner of the undercellars whorehouse.</li>
+                    <li data-id="playthrough_53_7">The exit from the northeast corner of the undercellars whorehouse connects to the Blushing Mermaid first floor in the southeast of the building. The Blushing Mermaid is found in the north east corner of Baldur's Gate.</li>
+                    <li data-id="playthrough_53_8">Scar will give you the task to seek out the reason for citizens disappearing from the streets of Baldurs Gate. The cause is the Ogre Mage in the Sewers. You can find the mage and solve the quest by finding the mage in the central western portion of the easternmost sewer map. Another way to get here is to exit the undercellars from the southwest exit. The Ogre mage will talk to you then summon his carrion crawlers and attack your party. Once killed return to Scar with your report.</li>
+                    <li data-id="playthrough_53_9">Chapter 7: In the sewers, map 0225, a Shadow Thief, one of the ones who was directed by Husam, will meet the party and take them to the sewer entrance to the palace. After you are taken to the location, you will be teleported to the Ducal Palace, first floor where the battle with Sarevok's dopplegangers begins. You must protect Belt and Liia Jannath in this battle, for more see the section above.</li>
+                </ul>
+
+                <a name="Gullykin"></a>
+                <h3><a href="#Gullykin">Gullykin</a>  (map 4000) <span id="playthrough_totals_54"></span></h3>
+                <ul>                                    
+                    <li data-id="playthrough_54_1">There are three sections to the sewer map: west, central and eastern. The sewer maps and the undercellars all connect to one another and several other landmarks, including the Iron Throne, The Undercellars whore house, and the Blushing Mermaid.</li>
+                    <li data-id="playthrough_54_2">Stairs up from this area give you the manhole covers in the street. The circular travelling icon either takes you to another part of the sewer or to one of the special areas.</li>
+                    <li data-id="playthrough_54_3">From the northern part of the west sewer you can access the Iron Throne directly by going out the west exit and the northeast corner of the undercellars whorehouse from going southwest.</li>
+                    <li data-id="playthrough_54_4">Ratchild, a kobald in the sewers will talk then have his kobald army attack the party.</li>
+                    <li data-id="playthrough_54_5">The southwest exit from the central sewer map takes you to the northwest corner of the undercellars whorehouse.</li>
+                    <li data-id="playthrough_54_6">The central exit from the eastern sewer map takes you to the southwest corner of the undercellars whorehouse.</li>
+                    <li data-id="playthrough_54_7">The exit from the northeast corner of the undercellars whorehouse connects to the Blushing Mermaid first floor in the southeast of the building. The Blushing Mermaid is found in the north east corner of Baldur's Gate.</li>
+                    <li data-id="playthrough_54_8">Scar will give you the task to seek out the reason for citizens disappearing from the streets of Baldurs Gate. The cause is the Ogre Mage in the Sewers. You can find the mage and solve the quest by finding the mage in the central western portion of the easternmost sewer map. Another way to get here is to exit the undercellars from the southwest exit. The Ogre mage will talk to you then summon his carrion crawlers and attack your party. Once killed return to Scar with your report.</li>
+                    <li data-id="playthrough_54_9">Chapter 7: In the sewers, map 0225, a Shadow Thief, one of the ones who was directed by Husam, will meet the party and take them to the sewer entrance to the palace. After you are taken to the location, you will be teleported to the Ducal Palace, first floor where the battle with Sarevok's dopplegangers begins. You must protect Belt and Liia Jannath in this battle, for more see the section above.</li>                        
+                </ul>
+
+            </div>           
+
+            <div class="tab-pane" id="tabHelp">
+
+                <h2>Help</h2>
+
+                <h3>Can I use this for multiple characters?</h3>
+                <p>
+                    Yup, use the profile selector and buttons at the top right of the page to setup multiple
+                    characters.
+                </p>
+
+                <h3>How does the checklist status get saved?</h3>
+                <p>
+                    It gets saved to the local storage in your browser and not to any database or API. So if you are
+                    clearing your browser cache make sure not to delete the site data or your checklists will
+                    get reset. At some point in the future I might hook it up to an API.
+                </p>
+
+                <h3>What else have you got planned?</h3>
+                <p>
+                    Not much really. I played the EE edition the first time sometimes between 2016 and 2017.
+                    Now i'm hunting the remaining achievement and starting the SoD expantion, so I realized I need 
+                    a couple more playthrough. This is my favourite guide for vanilla since is quite succint and convers
+                    almost anything you need. A cheat sheet is just a more usable format for that. 
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="profileModal" class="modal hide fade">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 id="profileModalTitle">Profile</h3>
+        </div>
+        <div class="modal-body">
+            <form class="form-horizontal">
+                <div class="control-group">
+                    <label class="control-label" for="profileModalName">Name</label>
+                    <div class="controls">
+                        <input type="text" id="profileModalName" placeholder="Enter profile name">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#" id="profileModalClose" class="btn">Close</a>
+            <a href="#" id="profileModalAdd" class="btn btn-primary">Add</a>
+            <a href="#" id="profileModalUpdate" class="btn btn-primary">Update</a>
+            <a href="#" id="profileModalDelete" class="btn btn-danger">Delete</a>
+        </div>
+    </div>
+</body>
+</html>
